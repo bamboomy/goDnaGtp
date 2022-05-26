@@ -23,21 +23,19 @@ public class Bridge {
 	}
 
 	public void read(Board board) {
-		
+
 		this.board = board;
 
 		checkHandicap();
 
 		Output.clear();
+		
+		output();
 
 		for (int i = 0; i < board.getSize(); i++) {
 			for (int j = 0; j < board.getSize(); j++) {
 
-				output();
-
 				input.accept(i, j, parseGoColor(board.getColor(GoPoint.get(i, j))));
-
-				output();
 			}
 		}
 	}
@@ -112,7 +110,7 @@ public class Bridge {
 
 		for (int i = 0; i < Output.points.length; i++) {
 			for (int j = 0; j < Output.points.length; j++) {
-				sb.append(Output.points[i][j] + "|");
+				sb.append(board.getColor(GoPoint.get(i, j)).getUppercaseLetter() + "|");
 			}
 			logger.debug(sb);
 			sb = new StringBuilder();

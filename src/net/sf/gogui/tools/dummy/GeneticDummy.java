@@ -213,7 +213,7 @@ public class GeneticDummy extends GtpEngine {
 		board.play(cmd.getColorArg(0), cmd.getPointArg(1, m_size));
 
 		if (bridge == null) {
-			bridge = new Bridge(cmd.getColorArg(0).otherColor());
+			bridge = new Bridge(GoColor.BLACK);
 		}
 	}
 
