@@ -14,8 +14,6 @@ public class Bridge {
 	private final GoColor ownColor;
 	private Board board;
 
-	private boolean handicap = false;
-
 	final static Logger logger = Logger.getLogger(Bridge.class);
 
 	public Bridge(GoColor ownColor) {
@@ -26,8 +24,6 @@ public class Bridge {
 
 		this.board = board;
 
-		checkHandicap();
-
 		Output.clear();
 		
 		output();
@@ -37,20 +33,6 @@ public class Bridge {
 
 				input.accept(i, j, parseGoColor(board.getColor(GoPoint.get(i, j))));
 			}
-		}
-	}
-
-	private void checkHandicap() {
-
-		if (!handicap) {
-
-			board.play(GoColor.BLACK, GoPoint.get(2, 2));
-			board.play(GoColor.BLACK, GoPoint.get(6, 2));
-			board.play(GoColor.BLACK, GoPoint.get(2, 6));
-			board.play(GoColor.BLACK, GoPoint.get(6, 6));
-			board.play(GoColor.BLACK, GoPoint.get(4, 4));
-
-			handicap = true;
 		}
 	}
 
@@ -73,8 +55,6 @@ public class Bridge {
 
 		double maxAboveZero = 0.0;
 		GoPoint result = null;
-
-		checkHandicap();
 
 		output();
 
