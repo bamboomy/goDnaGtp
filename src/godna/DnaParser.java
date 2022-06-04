@@ -472,11 +472,7 @@ public class DnaParser {
 
 		int counter = 0;
 
-		System.out.println(index);
-
 		for (ArrayList<String> list : valueList) {
-
-			System.out.println("l: " + list.size());
 
 			for (String value : list) {
 
@@ -484,8 +480,6 @@ public class DnaParser {
 
 					return value;
 				}
-
-				System.out.println("c:" + counter);
 			}
 		}
 

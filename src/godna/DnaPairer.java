@@ -8,6 +8,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class DnaPairer {
 
@@ -134,15 +136,7 @@ public class DnaPairer {
 			}
 		}
 
-		for (int i = 0; i < 10; i++) {
-			System.out.println("cp: " + cutpointsBase[i]);
-		}
-
 		Arrays.sort(cutpointsBase);
-
-		for (int i = 0; i < 10; i++) {
-			System.out.println("cp: " + cutpointsBase[i]);
-		}
 
 		return cutpointsBase;
 	}
@@ -182,8 +176,10 @@ public class DnaPairer {
 
 					int cutpointMinor = (int) (Math.random() * (cutpointMinorCounter - 10)) + 5;
 
-					System.out.println(
-							cutpointsBase[cutpointCounter] + ":" + cutpointMinorCounter + ", " + cutpointMinor);
+					/*
+					 * System.out.println( cutpointsBase[cutpointCounter] + ":" +
+					 * cutpointMinorCounter + ", " + cutpointMinor);
+					 */
 
 					result[cutpointCounter][0] = cutpointsBase[cutpointCounter];
 					result[cutpointCounter][1] = cutpointMinor;
@@ -209,11 +205,6 @@ public class DnaPairer {
 		}
 
 		System.out.println("-----");
-
-		for (int i = 0; i < 10; i++) {
-
-			System.out.println(result[i][0] + ", " + result[i][1]);
-		}
 
 		return result;
 	}
@@ -253,8 +244,10 @@ public class DnaPairer {
 
 					int cutpointMinor = (int) (Math.random() * (cutpointMinorCounter - 10)) + 5;
 
-					System.out.println(
-							cutpointsBase[cutpointCounter] + ":" + cutpointMinorCounter + ", " + cutpointMinor);
+					/*
+					 * System.out.println( cutpointsBase[cutpointCounter] + ":" +
+					 * cutpointMinorCounter + ", " + cutpointMinor);
+					 */
 
 					result[cutpointCounter][0] = cutpointsBase[cutpointCounter];
 					result[cutpointCounter][1] = cutpointMinor;
@@ -281,11 +274,6 @@ public class DnaPairer {
 
 		System.out.println("-----");
 
-		for (int i = 0; i < 10; i++) {
-
-			System.out.println(result[i][0] + ", " + result[i][1]);
-		}
-
 		return result;
 	}
 
@@ -304,10 +292,6 @@ public class DnaPairer {
 
 			String line;
 
-			int cutpointMinorCounter = 0;
-
-			boolean counting = false;
-
 			int cutpointCounter = 0;
 
 			BufferedReader currentBufferedReader = br1, otherBufferedReader = br2;
@@ -318,14 +302,26 @@ public class DnaPairer {
 
 			System.out.println("---");
 
+			StringBuilder dirty = new StringBuilder();
+			StringBuilder otherBuffer = new StringBuilder();
+			boolean cutting = false;
+
 			while ((line = currentBufferedReader.readLine()) != null) {
 
-				writer.write(line + "\n");
+				// writer.write(line + "\n");
+
+				if (cutting) {
+					dirty.append(line + "\n");
+				} else {
+					otherBuffer.append(line + "\n");
+				}
 
 				if (cutpointCounter < 10 && line.contains("<cutPoint" + nextBorder[cutpointCounter][0])) {
 
-					System.out.println(nextBorder[cutpointCounter][0]);
-					System.out.println("-" + nextBorder[cutpointCounter][1]);
+					System.out.println("nextBorder[cutpointCounter[0]" + nextBorder[cutpointCounter][0]);
+					System.out.println("nextBorder[cutpointCounter[1]" + nextBorder[cutpointCounter][1]);
+
+					cutting = true;
 
 					for (int i = 0; i < nextBorder[cutpointCounter][1]; i++) {
 
@@ -334,21 +330,22 @@ public class DnaPairer {
 							throw new RuntimeException("something's off :/ -> nextBorder");
 						}
 
-						writer.write(line + "\n");
+						// writer.write(line + "\n");
+						if (cutting) {
+							dirty.append(line + "\n");
+						} else {
+							otherBuffer.append(line + "\n");
+						}
 					}
 
 					BufferedReader tempBr = otherBufferedReader;
 					otherBufferedReader = currentBufferedReader;
 					currentBufferedReader = tempBr;
 
-					System.out.println("=" + nextBorder[cutpointCounter][0]);
-
 					nextBorder = otherNextBorder;
 					int[][] temp = currentNextBorder;
 					currentNextBorder = otherNextBorder;
 					otherNextBorder = temp;
-
-					System.out.println("=" + nextBorder[cutpointCounter][0]);
 
 					while ((line = currentBufferedReader.readLine()) != null
 							&& !line.contains("<cutPoint" + nextBorder[cutpointCounter][0])) {
@@ -371,18 +368,80 @@ public class DnaPairer {
 					}
 
 					cutpointCounter++;
+				}
 
-					if (cutpointCounter != 10) {
-						System.out.println(nextBorder[cutpointCounter][0]);
-					}
+				if (cutpointCounter > 0 && cutpointCounter - 1 < 10
+						&& line.contains("</cutPoint" + nextBorder[cutpointCounter - 1][0])) {
+
+					cutting = false;
+
+					writer.write(otherBuffer.toString());
+					writer.write(clean(dirty).toString());
+
+					otherBuffer = new StringBuilder();
+					dirty = new StringBuilder();
 				}
 			}
+
+			writer.write(otherBuffer.toString());
 
 			br1.close();
 
 		} catch (IOException e) {
 			e.printStackTrace();
 			throw new RuntimeException(e);
+		}
+	}
+
+	private static StringBuilder clean(StringBuilder dirty) throws IOException {
+
+		StringBuilder clean = new StringBuilder();
+
+		Set<String> booleanSet = new HashSet<>();
+		Set<String> doubleSet = new HashSet<>();
+		Set<String> objectSet = new HashSet<>();
+
+		System.out.println("cleaning");
+
+		String[] lines = dirty.toString().split("\\n");
+		for (String line : lines) {
+
+			if (line.contains("boolean")) {
+
+				clean.append(checkLine(line, booleanSet, "boolean "));
+
+			} else if (line.contains("double")) {
+
+				clean.append(checkLine(line, doubleSet, "double "));
+
+			} else if (line.contains("Thought ")) {
+
+				clean.append(checkLine(line, objectSet, "Thought "));
+
+			} else {
+
+				clean.append(line);
+			}
+		}
+
+		return clean;
+	}
+
+	private static String checkLine(String line, Set<String> variableSet, String delimiter) {
+
+		String before = line.split(" =")[0];
+
+		System.out.println(before);
+
+		if (variableSet.add(before.split(delimiter)[1])) {
+
+			return line;
+
+		} else {
+
+			System.out.println("skipped: " + line);
+
+			return "";
 		}
 	}
 }
