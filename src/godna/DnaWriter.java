@@ -5,6 +5,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import genetic.CountDownExc;
+
 public class DnaWriter {
 
 	private static final int NB_OF_THOUGHTS = 20, MIN_LINEZ = 10, MAX_LINEZ = 30;
@@ -615,6 +617,8 @@ public class DnaWriter {
 		int nbOfLinez = getNbOfLinez();
 
 		writer.write("try {\n");
+		
+		writer.write("if (false) { throw new CountDownExc(-1); }\n");
 
 		writer.write("<cutPoint" + cutPointCounter + ">\n");
 
