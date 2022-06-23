@@ -3,10 +3,10 @@ import java.util.ArrayList;
 class Thought15 extends Thought{
 private static ArrayList<Thought15> instances = new ArrayList<>();
 private static int instanceCounter = 0;
-private boolean fb0 = true;
+private boolean fb0 = false;
 private boolean fb1 = false;
-private double fd0 = 854.1256210122791;
-private double fd1 = 402.08163417417336;
+private double fd0 = 85.09849434085137;
+private double fd1 = 662.9465720873993;
 private Thought fo0 = null;
 private Thought fo1 = null;
 Thought15 (){
@@ -183,38 +183,38 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    fb0 = fb1 || fb0;
-if(fo1 != null){
-      fb1 = fo1.m2(fo0, fo1, fo0, fo1, fd0, fd1, fd0, fd1, fb0, fb1, fb0, fb1);
-}
-if(fo0 != null){
-      fd0 = fo0.m3(fd1, fd0, fd1, fd0, fb0, fb1, fb0, fb1);
-}
-    fd1 = fd0 + fd1;
-if(fo0 != null){
-      fo1 = fo0.m4(fo1, fo0, fo1, fo0, fd0, fd1, fd0, fd1);
-}
-    boolean lb0 = true;
-if(fo1 != null){
-      lb0 = fo1.m2();
-}
-if(fo0 != null){
-      fo0.m1(fo1, fo0, fo1, fo0, fb0, fb1, lb0, fb0);
-}
-if(fo1 != null){
-      fd0 = fo1.m3(fb1, lb0, fb0, fb1);
-}
+if (false) { throw new CountDownExc(-1); }
     fd1 *= -1;
-    lb0 = fd0 > fd1;
-    fb0 = fb1 && lb0;
-if(fo1 != null){
-      fo0 = fo1.m4(fd0, fd1, fd0, fd1);
-}
     fd0 = fd1 - fd0;
+    fb0 = fd1 > fd0;
+    double ld0 = 437.20904928606757;
 if(fo1 != null){
-      fo0 = fo1.m4(fo0, fo1, fo0, fo1);
+      fd0 = fo1.m3(fo0, fo1, fo0, fo1, fb1, fb0, fb1, fb0);
 }
-    fd1 *= -1;
+    fd1 = ld0 + fd0;
+if(fo1 != null){
+      fo0 = fo1.m4(fd1, ld0, fd0, fd1);
+}
+    Thought lo1 = Thought65.getInstance(fo0, fo1, fo0, fo1, ld0, fd0, fd1, ld0);
+    fb1 = fb0 || fb1;
+if(fo0 != null){
+      fo0.m3(fb0, fb1, fb0, fb1);
+}
+if(fo0 != null){
+      fo1 = fo0.m4();
+}
+    double ld2 = 301.05989660581105;
+    Thought lo3 = Thought81.getInstance(ld2, fd0, fd1, ld0, fb0, fb1, fb0, fb1);
+if(fo0 != null){
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0);
+}
+    fb0 = ld2 > fd0;
+if(fo1 != null){
+      fb1 = fo1.m2(fo0, fo1, fo0, fo1, fd1, ld0, ld2, fd0, fb0, fb1, fb0, fb1);
+}
+if(fo0 != null){
+      fo0.m3(fo1, fo0, fo1, fo0, fb0, fb1, fb0, fb1);
+}
 
 Thought.STACK_COUNTER++;
 } catch (StackOverflowExc | NoClassDefFoundError e) { 
@@ -232,48 +232,44 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    fd0 = fd1 + fd0;
-    boolean lb0 = true;
+if (false) { throw new CountDownExc(-1); }
     fd1 = fd0 - fd1;
+    Thought lo0 = Thought2.getInstance(fd0, fd1, fd0, fd1);
+    boolean lb1 = false;
+    lb1 = fd0 < fd1;
 if(fo1 != null){
-      fo0 = fo1.m4(fo0, fo1, fo0, fo1, fd0, fd1, fd0, fd1, ab1, ab2, ab3, ab4);
-}
-    fb0 = fd0 < fd1;
-    fd0 = fd1 + fd0;
-    fb1 = lb0 && ab1;
-if(fo1 != null){
-      fo0 = fo1.m4(fd1, fd0, fd1, fd0, ab2, ab3, ab4, fb0);
-}
-    boolean lb1 = true;
-if(fo0 != null){
-      fo0.m3(fo1, fo0, fo1, fo0, fd1, fd0, fd1, fd0);
+      fd0 = fo1.m3(fo0, fo1, fo0, fo1, fd1, fd0, fd1, fd0);
 }
     fd1 = fd0 + fd1;
+    fd0 *= -1;
 if(fo1 != null){
-      fo1.m1();
+          fo0 = fo1.m4(ab1, ab2, ab3, ab4);
 }
-    double ld2 = 7.632745767417893;
+    fb0 = !fb1;
+    if (lb1) {
+if(fo1 != null){
+          fo0 = fo1.m4();
+}
+        double ld2 = 81.94536742390075;
+        fd0 = fd1 + ld2;
+        Thought lo3 = Thought96.getInstance(fd0, fd1, ld2, fd0, ab1, ab2, ab3, ab4);
+        } else {
 if(fo0 != null){
-      fo0.m2(fo1, fo0, fo1, fo0, fb0, fb1, lb0, lb1);
+          fo0.m1(fo1, fo0, fo1, fo0);
 }
-    double ld3 = 850.1118655895624;
+        Thought lo4 = Thought50.getInstance(fo1, fo0, fo1, fo0, fd0, fd1, fd0, fd1, fb0, fb1, lb1, ab1);
+        fd0 = fd1 + fd0;
+        fd1 *= -1;
+        boolean lb5 = true;
+        ab1 = ab2 && ab3;
 if(fo1 != null){
-      ab1 = fo1.m2(ab2, ab3, ab4, fb0);
+          ab4 = fo1.m2(fo0, fo1, fo0, fo1, fb0, fb1, lb5, lb1);
 }
-    ld2 = ld3 - fd0;
-if(fo0 != null){
-      fd1 = fo0.m3(ld2, ld3, fd0, fd1);
+        for(int i0=0; i0<10; i0++){
+            Thought lo6 = Thought71.getInstance(fd0, fd1, fd0, fd1);
+            ab1 = fd0 > fd1;
+            }
 }
-    fb1 = lb0 && lb1;
-if(fo1 != null){
-      ab1 = fo1.m2(fo0, fo1, fo0, fo1);
-}
-    ld2 = ld3 - fd0;
-    boolean lb4 = false;
-    boolean lb5 = true;
-    fd1 *= -1;
-    lb5 = ld2 > ld3;
-
 Thought.STACK_COUNTER++;
 } catch (StackOverflowExc | NoClassDefFoundError e) { 
 throw new CountDownExc(50);
@@ -290,31 +286,32 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-if(fo0 != null){
-      fb0 = fo0.m2(fo1, fo0, fo1, fo0, ad1, ad2, ad3, ad4, fb1, fb0, fb1, fb0);
-}
-    fb1 = fb0 && fb1;
+if (false) { throw new CountDownExc(-1); }
+    ad1 = ad2 + ad3;
+    fb1 = !fb0;
+    Thought lo0 = Thought84.getInstance(fo0, fo1, fo0, fo1, ad4, fd0, fd1, ad1);
 if(fo1 != null){
-      fd0 = fo1.m3(fd1, ad1, ad2, ad3, fb0, fb1, fb0, fb1);
+      fo0 = fo1.m4(fb1, fb0, fb1, fb0);
 }
-if(fo1 != null){
-      fo0 = fo1.m4(fo0, fo1, fo0, fo1, ad4, fd0, fd1, ad1);
-}
-    ad2 = ad3 + ad4;
-    fb0 = !fb1;
 if(fo1 != null){
       fo0 = fo1.m4();
 }
+    boolean lb1 = true;
+    ad2 = ad3 + ad4;
+    fb0 = fb1 || lb1;
+    fb0 = fd0 < fd1;
+    fb1 = lb1 && fb0;
+    fb1 = lb1 || fb0;
 if(fo0 != null){
-      fo0.m2(fo1, fo0, fo1, fo0, fb0, fb1, fb0, fb1);
+      fo0.m1(ad1, ad2, ad3, ad4, fb1, lb1, fb0, fb1);
 }
-    boolean lb0 = true;
-        Thought lo1 = Thought0.getInstance(lb0, fb0, fb1, lb0);
-    boolean lb2 = false;
 if(fo0 != null){
-      fo1 = fo0.m4(fd0, fd1, ad1, ad2);
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0);
 }
-    lb2 = !fb0;
+if(fo0 != null){
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0, fd0, fd1, ad1, ad2, lb1, fb0, fb1, lb1);
+}
+    fb0 = !fb1;
 
 Thought.STACK_COUNTER++;
 } catch (StackOverflowExc | NoClassDefFoundError e) { 
@@ -332,42 +329,39 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
+if (false) { throw new CountDownExc(-1); }
+if(fo1 != null){
+      fo1.m1(fo0, fo1, fo0, fo1, ab1, ab2, ab3, ab4);
+}
+if(fo1 != null){
+      fo0 = fo1.m4(ad1, ad2, ad3, ad4);
+}
+    fb0 = fb1 && ab1;
+if(fo0 != null){
+      ab2 = fo0.m2(fo1, fo0, fo1, fo0, fd0, fd1, ad1, ad2);
+}
+if(fo0 != null){
+      fo1 = fo0.m4(ab3, ab4, fb0, fb1);
+}
+    ad3 = ad4 - fd0;
+    ab1 = ab2 || ab3;
     boolean lb0 = true;
 if(fo0 != null){
-      fo1 = fo0.m4(fo1, fo0, fo1, fo0);
+      fo1 = fo0.m4();
 }
-    boolean lb1 = false;
-    ad1 = ad2 + ad3;
-    double ld2 = 184.1823394580083;
+    double ld1 = 568.1917704348724;
+    ab3 = fd0 < fd1;
+    boolean lb2 = true;
+    ab3 = ab4 && fb0;
+    fb1 = lb0 && lb2;
+    Thought lo3 = Thought51.getInstance(ld1, ad1, ad2, ad3, ab1, ab2, ab3, ab4);
 if(fo1 != null){
-      lb1 = fo1.m2(fo0, fo1, fo0, fo1, ad3, ad4, fd0, fd1, ab1, ab2, ab3, ab4);
+      fb0 = fo1.m2(fo0, fo1, fo0, fo1);
 }
 if(fo0 != null){
-      fo0.m2(ld2, ad1, ad2, ad3, fb0, fb1, lb0, lb1);
+      fb1 = fo0.m2(fo1, fo0, fo1, fo0, ad4, fd0, fd1, ld1, lb0, lb2, ab1, ab2);
 }
-    ab1 = !ab2;
-    Thought lo3 = Thought18.getInstance(fo1, fo0, fo1, fo0, ad4, fd0, fd1, ld2);
-    boolean lb4 = false;
-    Thought lo5 = Thought19.getInstance();
-if(fo1 != null){
-      ab2 = fo1.m2(fo0, fo1, fo0, fo1, ab3, ab4, fb0, fb1);
-}
-    if (lb0) {
-        lb1 = !lb4;
-        ad1 = ad2 - ad3;
-        ab1 = ab2 && ab3;
-        ab4 = !fb0;
-        fb1 = lb0 || lb1;
-        lb4 = ad4 < fd0;
-if(fo0 != null){
-          fo0.m2(ab1, ab2, ab3, ab4);
-}
-        if (fb0) {
-            double ld6 = 328.7420231957948;
-if(fo1 != null){
-              fb1 = fo1.m2(fd0, fd1, ld6, ld2);
-}
-}}
+
 Thought.STACK_COUNTER++;
 } catch (StackOverflowExc | NoClassDefFoundError e) { 
 throw new CountDownExc(50);
@@ -384,52 +378,61 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
+if (false) { throw new CountDownExc(-1); }
+    boolean lb0 = true;
+    fd1 = fd0 - fd1;
+    lb0 = fb0 || fb1;
+if(ao2 != null){
+      ao2.m2(ao3, ao4, fo0, fo1, lb0, fb0, fb1, lb0);
+}
+    boolean lb1 = true;
+    double ld2 = 308.12892173853805;
+if(ao1 != null){
+      lb1 = ao1.m2(ld2, fd0, fd1, ld2);
+}
+    fb0 = fb1 || lb0;
+if(ao3 != null){
+      ao2 = ao3.m4(ao4, fo0, fo1, ao1, fd0, fd1, ld2, fd0);
+}
+    fd1 = ld2 + fd0;
+    fd1 = ld2 - fd0;
+if(ao2 != null){
+      fd1 = ao2.m3(lb1, fb0, fb1, lb0);
+}
+if(ao4 != null){
+      ao3 = ao4.m4();
+}
+if(fo1 != null){
+      fo0 = fo1.m4(ld2, fd0, fd1, ld2, lb1, fb0, fb1, lb0);
+}
 if(ao2 != null){
       ao1 = ao2.m4(ao3, ao4, fo0, fo1);
 }
-if(ao2 != null){
-      ao1 = ao2.m4(ao3, ao4, fo0, fo1, fd0, fd1, fd0, fd1, fb0, fb1, fb0, fb1);
-}
 if(ao1 != null){
-      ao1.m1(fd0, fd1, fd0, fd1, fb0, fb1, fb0, fb1);
+      ao1.m3(ao2, ao3, ao4, fo0, fd0, fd1, ld2, fd0, lb1, fb0, fb1, lb0);
 }
-if(ao3 != null){
-      ao2 = ao3.m4(ao4, fo0, fo1, ao1, fd0, fd1, fd0, fd1);
+    fd1 = ld2 + fd0;
+    lb1 = fd1 > ld2;
+    fb0 = fb1 || lb0;
+    lb1 = fd0 > fd1;
+if(ao1 != null){
+      fo1 = ao1.m4(ao2, ao3, ao4, fo0, fb0, fb1, lb0, lb1);
 }
-    fb0 = fb1 || fb0;
-    fd0 = fd1 + fd0;
-    fb1 = !fb0;
-if(ao2 != null){
-      fb1 = ao2.m2();
+if(fo1 != null){
+      ld2 = fo1.m3(fd0, fd1, ld2, fd0);
 }
-    Output.points[5][3] -= fd1;
-    fb0 = fb1 || fb0;
-    fb1 = fd0 > fd1;
-if(ao3 != null){
-      fb0 = ao3.m2(ao4, fo0, fo1, ao1, fb1, fb0, fb1, fb0);
+    double ld3 = 379.3230898713178;
+    fd0 = fd1 - ld2;
+if(ao1 != null){
+      ld3 = ao1.m3(ao2, ao3, ao4, fo0, fd0, fd1, ld2, ld3);
 }
-    boolean lb0 = false;
-if(ao3 != null){
-      ao2 = ao3.m4(fb0, fb1, lb0, fb0);
+if(fo1 != null){
+      fo1.m3(fb0, fb1, lb0, lb1);
 }
-    fd0 *= -1;
-    fb1 = fd1 < fd0;
-if(ao4 != null){
-      lb0 = ao4.m2(fd1, fd0, fd1, fd0);
+    fd0 = fd1 + ld2;
+if(ao1 != null){
+      fb0 = ao1.m2();
 }
-    double ld1 = 745.0530855301696;
-if(fo0 != null){
-      fo0.m2(fo1, ao1, ao2, ao3);
-}
-    fb0 = fb1 && lb0;
-    Output.points[5][4] -= fd0;
-    double ld2 = 867.2556548620367;
-if(fo0 != null){
-      ao4 = fo0.m4(fo1, ao1, ao2, ao3, fd0, fd1, ld1, ld2, fb0, fb1, lb0, fb0);
-}
-    fb1 = fd0 < fd1;
-    ld1 = ld2 - fd0;
-    lb0 = fb0 && fb1;
 
 Thought.STACK_COUNTER++;
 } catch (StackOverflowExc | NoClassDefFoundError e) { 
@@ -447,55 +450,57 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    fb0 = ad2 > ad3;
-    Thought lo0 = Thought5.getInstance(ad4, fd0, fd1, ad1, fb1, fb0, fb1, fb0);
-    ad2 *= -1;
-    double ld1 = 814.9853780448648;
-    double ld2 = 59.340774264822464;
+if (false) { throw new CountDownExc(-1); }
+    ad2 = ad3 + ad4;
+    fd0 = fd1 + ad1;
+    ad2 = ad3 - ad4;
+    fd0 *= -1;
+    fd1 *= -1;
+    fb1 = !fb0;
+if(ao2 != null){
+      ad1 = ao2.m3(ad2, ad3, ad4, fd0, fb1, fb0, fb1, fb0);
+}
+if(ao4 != null){
+      ao3 = ao4.m4(fo0, fo1, ao1, ao2);
+}
 if(ao3 != null){
-      ao2 = ao3.m4(ao4, fo0, fo1, ao1, ad1, ad2, ad3, ad4);
+      fd1 = ao3.m3(ao4, fo0, fo1, ao1, ad1, ad2, ad3, ad4, fb1, fb0, fb1, fb0);
+}
+if(ao2 != null){
+      fb1 = ao2.m2(ao3, ao4, fo0, fo1, fb0, fb1, fb0, fb1);
+}
+    fb0 = fb1 && fb0;
+if(ao1 != null){
+      ao1.m2(fd0, fd1, ad1, ad2);
+}
+if(ao2 != null){
+      fb1 = ao2.m2(ao3, ao4, fo0, fo1, ad3, ad4, fd0, fd1);
+}
+    double ld0 = 984.4006767070266;
+    Thought lo1 = Thought95.getInstance(fb0, fb1, fb0, fb1);
+    fb0 = ld0 > ad1;
+    fb1 = ad2 < ad3;
+    fb0 = fb1 && fb0;
+if(ao2 != null){
+      ao1 = ao2.m4();
+}
+if(ao3 != null){
+      ad4 = ao3.m3(fd0, fd1, ld0, ad1, fb1, fb0, fb1, fb0);
 }
     for(int i0=0; i0<10; i0++){
-        fb1 = !fb0;
-if(ao2 != null){
-          fd0 = ao2.m3();
+if(fo0 != null){
+          ao4 = fo0.m4(fo1, ao1, ao2, ao3);
 }
-if(ao3 != null){
-          fb1 = ao3.m2(ao4, fo0, fo1, ao1, fb0, fb1, fb0, fb1);
-}
-if(ao2 != null){
-          ao2.m1(fb0, fb1, fb0, fb1);
-}
-        Thought lo3 = Thought0.getInstance(fd1, ld1, ld2, ad1);
+        boolean lb2 = true;
         ad2 = ad3 - ad4;
-        fb0 = fd0 > fd1;
-        ld1 = ld2 + ad1;
-if(ao3 != null){
-          fb1 = ao3.m2(ao4, fo0, fo1, ao1);
+if(fo0 != null){
+          ao4 = fo0.m4(fo1, ao1, ao2, ao3, fd0, fd1, ld0, ad1, fb0, fb1, lb2, fb0);
 }
-if(ao2 != null){
-          ad2 = ao2.m3(ao3, ao4, fo0, fo1, ad3, ad4, fd0, fd1, fb0, fb1, fb0, fb1);
-}
-if(ao1 != null){
-          ld1 = ao1.m3(ld2, ad1, ad2, ad3, fb0, fb1, fb0, fb1);
-}
-        ad4 = fd0 + fd1;
-        }
-if(ao3 != null){
-      ao2 = ao3.m4(ao4, fo0, fo1, ao1, ld1, ld2, ad1, ad2);
-}
-if(ao2 != null){
-      ao2.m2();
-}
-    boolean lb4 = false;
-    lb4 = fb0 && fb1;
-    lb4 = fb0 || fb1;
+        fb1 = ad2 > ad3;
 if(ao4 != null){
-      ao3 = ao4.m4(fo0, fo1, ao1, ao2, lb4, fb0, fb1, lb4);
+          lb2 = ao4.m2(fo0, fo1, ao1, ao2, fb0, fb1, lb2, fb0);
 }
-    ad3 *= -1;
-    boolean lb5 = false;
-
+}
 Thought.STACK_COUNTER++;
 } catch (StackOverflowExc | NoClassDefFoundError e) { 
 throw new CountDownExc(50);
@@ -512,54 +517,49 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
+if (false) { throw new CountDownExc(-1); }
 if(ao1 != null){
-      ao1.m1(ab2, ab3, ab4, fb0);
+      fd0 = ao1.m3(fd1, fd0, fd1, fd0);
 }
-    Output.points[5][5] -= fd1;
-if(ao2 != null){
-      ao2.m1(fd0, fd1, fd0, fd1);
-}
-    fb1 = ab1 && ab2;
-    fd0 *= -1;
-    ab3 = fd1 < fd0;
+    if (ab1) {
 if(ao3 != null){
-      ao3.m2(ao4, fo0, fo1, ao1);
+          ao2 = ao3.m4(ao4, fo0, fo1, ao1, fd1, fd0, fd1, fd0);
 }
-    fd1 = fd0 - fd1;
-    Thought lo0 = Thought5.getInstance(ao2, ao3, ao4, fo0, fd0, fd1, fd0, fd1, ab4, fb0, fb1, ab1);
-    fd0 = fd1 + fd0;
-    boolean lb1 = false;
-if(ao1 != null){
-      fo1 = ao1.m4(fd1, fd0, fd1, fd0, ab1, ab2, ab3, ab4);
-}
-    fd1 *= -1;
-    fb0 = fb1 || lb1;
-    fd0 = fd1 - fd0;
-if(ao2 != null){
-      ao2.m1(ao3, ao4, fo0, fo1, fd1, fd0, fd1, fd0);
-}
-    double ld2 = 442.72890040976756;
-if(ao2 != null){
-      ao1 = ao2.m4();
-}
+        ab2 = fd1 > fd0;
+        fd1 = fd0 + fd1;
+        fd0 = fd1 - fd0;
 if(ao3 != null){
-      ao3.m1(ao4, fo0, fo1, ao1, ab1, ab2, ab3, ab4);
+          ao2 = ao3.m4(ab3, ab4, fb0, fb1);
 }
-    fb0 = !fb1;
-if(ao2 != null){
-      fd0 = ao2.m3(lb1, ab1, ab2, ab3);
+        fd1 *= -1;
+if(ao4 != null){
+          fd0 = ao4.m3();
 }
-    Thought lo3 = Thought11.getInstance(fd1, ld2, fd0, fd1);
-    Output.points[5][6] += ld2;
-    ab4 = fd0 > fd1;
-    Thought lo4 = Thought11.getInstance(ao3, ao4, fo0, fo1);
-    fb0 = fb1 && lb1;
-    ld2 = fd0 + fd1;
-    ab1 = !ab2;
-if(ao2 != null){
-      ao1 = ao2.m4(ao3, ao4, fo0, fo1, ld2, fd0, fd1, ld2, ab3, ab4, fb0, fb1);
+        double ld0 = 551.889411307512;
+        ab1 = ab2 && ab3;
+if(fo0 != null){
+          fo0.m1(fd0, fd1, ld0, fd0, ab4, fb0, fb1, ab1);
 }
-
+        boolean lb1 = false;
+        if (ab1) {
+            fd1 = ld0 - fd0;
+            if (ab2) {
+                ab3 = !ab4;
+                boolean lb2 = true;
+if(fo1 != null){
+                  fo1.m1(ao1, ao2, ao3, ao4);
+}
+                ab4 = fd1 < ld0;
+                Thought lo3 = Thought94.getInstance(fo0, fo1, ao1, ao2, fd0, fd1, ld0, fd0, fb0, fb1, lb2, lb1);
+                double ld4 = 420.93920010798246;
+                ab1 = ab2 || ab3;
+if(ao3 != null){
+                  fd0 = ao3.m3(ao4, fo0, fo1, ao1, ab4, fb0, fb1, lb2);
+}
+                lb1 = ab1 && ab2;
+                fd1 = ld4 - ld0;
+                fd0 *= -1;
+}}}
 Thought.STACK_COUNTER++;
 } catch (StackOverflowExc | NoClassDefFoundError e) { 
 throw new CountDownExc(50);
@@ -576,21 +576,30 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
+if (false) { throw new CountDownExc(-1); }
 if(ao2 != null){
-      ao1 = ao2.m4(ad2, ad3, ad4, fd0, ab1, ab2, ab3, ab4);
+      ad1 = ao2.m3(ad2, ad3, ad4, fd0);
 }
-    fd1 = ad1 + ad2;
+if(ao4 != null){
+      ao3 = ao4.m4(fo0, fo1, ao1, ao2, fd1, ad1, ad2, ad3);
+}
+    boolean lb0 = true;
+    ad4 = fd0 + fd1;
+    lb0 = ad1 < ad2;
+    ab1 = !ab2;
 if(ao3 != null){
-      ao3.m3(ao4, fo0, fo1, ao1, ad3, ad4, fd0, fd1);
+      ab3 = ao3.m2(ab4, fb0, fb1, lb0);
 }
-if(ao3 != null){
-      ao2 = ao3.m4();
+    ab1 = ab2 || ab3;
+    double ld1 = 765.2837097459417;
+    ad2 *= -1;
+    ab4 = ad3 > ad4;
+if(ao4 != null){
+      fb0 = ao4.m2();
 }
-    fb0 = ad1 > ad2;
-    fb1 = ad3 < ad4;
-    Thought lo0 = Thought10.getInstance(ao4, fo0, fo1, ao1, ab1, ab2, ab3, ab4);
-    fb0 = !fb1;
-    boolean lb1 = true;
+if(fo1 != null){
+      fo0 = fo1.m4(fd0, fd1, ld1, ad1, fb1, lb0, ab1, ab2);
+}
 
 Thought.STACK_COUNTER++;
 } catch (StackOverflowExc | NoClassDefFoundError e) { 
@@ -608,44 +617,43 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    double ld0 = 151.39804403234092;
-    fb0 = fb1 || fb0;
-    Thought lo1 = Thought0.getInstance(fb1, fb0, fb1, fb0);
-    fb1 = fb0 || fb1;
-    fb0 = ld0 > fd0;
+if (false) { throw new CountDownExc(-1); }
+    fd0 *= -1;
+    boolean lb0 = true;
+    Output.points[5][0] += fd1;
+    double ld1 = 785.745289210856;
+    Output.points[5][1] += ld1;
+    fb0 = fd0 < fd1;
 if(fo1 != null){
-      fo1.m2(fd1, ld0, fd0, fd1);
+      fo0 = fo1.m4(fo0, fo1, fo0, fo1);
 }
-    fb1 = fb0 && fb1;
-    if (fb0) {
-        Thought lo2 = Thought12.getInstance(fo0, fo1, fo0, fo1);
-        boolean lb3 = true;
-        Output.points[5][7] += ld0;
-if(fo1 != null){
-          fo0 = fo1.m4(fo0, fo1, fo0, fo1, fd0, fd1, ld0, fd0, fb0, fb1, lb3, fb0);
-}
-        for(int i0=0; i0<10; i0++){
-            double ld4 = 51.424545557942054;
 if(fo0 != null){
-              fd0 = fo0.m3(fd1, ld4, ld0, fd0, fb1, lb3, fb0, fb1);
+      fo0.m3(fo1, fo0, fo1, fo0, ld1, fd0, fd1, ld1, fb1, lb0, fb0, fb1);
 }
-if(fo1 != null){
-              fo1.m1(fo0, fo1, fo0, fo1, fd1, ld4, ld0, fd0);
-}
-            Thought lo5 = Thought14.getInstance();
+    lb0 = fb0 && fb1;
 if(fo0 != null){
-              fd1 = fo0.m3(fo1, fo0, fo1, fo0, lb3, fb0, fb1, lb3);
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0, lb0, fb0, fb1, lb0);
 }
-if(fo1 != null){
-              fo1.m3(fb0, fb1, lb3, fb0);
-}
-            ld4 *= -1;
-            boolean lb6 = false;
-            Output.points[5][8] -= ld0;
+    fd0 = fd1 - ld1;
+    fd0 *= -1;
 if(fo0 != null){
-              fo0.m3(fd0, fd1, ld4, ld0);
+      fo1 = fo0.m4(fd1, ld1, fd0, fd1);
 }
-}}
+if(fo0 != null){
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0, ld1, fd0, fd1, ld1);
+}
+if(fo0 != null){
+      fo1 = fo0.m4(fb0, fb1, lb0, fb0);
+}
+    fd0 = fd1 - ld1;
+if(fo1 != null){
+      fd0 = fo1.m3();
+}
+    fb1 = lb0 && fb0;
+    boolean lb2 = false;
+    fd1 *= -1;
+    double ld3 = 185.10312852800652;
+
 Thought.STACK_COUNTER++;
 return fb0;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
@@ -663,35 +671,38 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
+if (false) { throw new CountDownExc(-1); }
 if(fo1 != null){
-      fo1.m3(fo0, fo1, fo0, fo1);
+          fo0 = fo1.m4(fd0, fd1, fd0, fd1, ab2, ab3, ab4, fb0);
+}
+        boolean lb0 = true;
+    fd0 *= -1;
+    fd1 = fd0 + fd1;
+    double ld1 = 439.10188050683536;
+if(fo1 != null){
+      fo0 = fo1.m4(fo0, fo1, fo0, fo1);
 }
 if(fo0 != null){
-      fo0.m3(fo1, fo0, fo1, fo0, fd0, fd1, fd0, fd1, ab2, ab3, ab4, fb0);
+      fb0 = fo0.m2(fo1, fo0, fo1, fo0, ld1, fd0, fd1, ld1, fb1, lb0, ab1, ab2);
 }
-if(fo1 != null){
-      fo1.m3(fd0, fd1, fd0, fd1, fb1, ab1, ab2, ab3);
+    Thought lo2 = Thought44.getInstance(fo1, fo0, fo1, fo0, ab3, ab4, fb0, fb1);
+if(fo0 != null){
+      fo1 = fo0.m4(fd0, fd1, ld1, fd0);
 }
-    ab4 = fb0 || fb1;
-    ab1 = fd0 > fd1;
-    fd0 = fd1 - fd0;
-    Output.points[6][0] -= fd1;
-    Thought lo0 = Thought15.getInstance(fo0, fo1, fo0, fo1, fd0, fd1, fd0, fd1);
-    ab2 = ab3 || ab4;
-if(fo1 != null){
-      fo0 = fo1.m4();
+    boolean lb3 = false;
+if(fo0 != null){
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0, fd1, ld1, fd0, fd1);
 }
 if(fo0 != null){
-      fo0.m1(fo1, fo0, fo1, fo0, fb0, fb1, ab1, ab2);
+      fo1 = fo0.m4(lb0, lb3, ab1, ab2);
 }
-if(fo1 != null){
-      fd0 = fo1.m3(ab3, ab4, fb0, fb1);
+    ld1 = fd0 - fd1;
+if(fo0 != null){
+      fo1 = fo0.m4();
 }
-    Thought lo1 = Thought17.getInstance(fd1, fd0, fd1, fd0);
-    boolean lb2 = true;
 
 Thought.STACK_COUNTER++;
-return lb2;
+return ab3;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
 } catch (CountDownExc e) {
 if(!e.surfaced()) {
@@ -707,26 +718,28 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    Thought lo0 = Thought6.getInstance(fo0, fo1, fo0, fo1);
-if(fo0 != null){
-      fo0.m3(fo1, fo0, fo1, fo0, ad2, ad3, ad4, fd0, fb1, fb0, fb1, fb0);
-}
-    fb1 = !fb0;
-    for(int i0=0; i0<10; i0++){
-        boolean lb1 = true;
-if(fo0 != null){
-          fo1 = fo0.m4(fd1, ad1, ad2, ad3, fb0, fb1, lb1, fb0);
-}
-        double ld2 = 353.3289755349313;
-        Thought lo3 = Thought1.getInstance(fo1, fo0, fo1, fo0, ad3, ad4, fd0, fd1);
-        ld2 *= -1;
+if (false) { throw new CountDownExc(-1); }
+    fb1 = ad1 > ad2;
 if(fo1 != null){
-          fb1 = fo1.m2();
+      ad3 = fo1.m3(ad4, fd0, fd1, ad1, fb0, fb1, fb0, fb1);
 }
-        lb1 = ad1 < ad2;
-        boolean lb4 = true;
-        boolean lb5 = true;
+if(fo0 != null){
+      ad2 = fo0.m3(fo1, fo0, fo1, fo0);
 }
+    Output.points[5][2] -= ad3;
+if(fo0 != null){
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0, ad4, fd0, fd1, ad1, fb0, fb1, fb0, fb1);
+}
+if(fo0 != null){
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0, fb0, fb1, fb0, fb1);
+}
+    fb0 = fb1 && fb0;
+    ad2 = ad3 - ad4;
+    Thought lo0 = Thought59.getInstance(fd0, fd1, ad1, ad2);
+if(fo1 != null){
+      ad3 = fo1.m3(fo0, fo1, fo0, fo1, ad4, fd0, fd1, ad1);
+}
+
 Thought.STACK_COUNTER++;
 return fb1;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
@@ -744,36 +757,45 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    ab1 = ad2 > ad3;
-    ab2 = !ab3;
-if(fo0 != null){
-      fo0.m1(fo1, fo0, fo1, fo0, ab4, fb0, fb1, ab1);
+if (false) { throw new CountDownExc(-1); }
+    ab1 = ab2 && ab3;
+if(fo1 != null){
+      fo0 = fo1.m4(ab4, fb0, fb1, ab1);
 }
-    ab2 = ab3 || ab4;
-    Thought lo0 = Thought4.getInstance(fb0, fb1, ab1, ab2);
-    ab3 = ab4 || fb0;
-    boolean lb1 = true;
-    ad4 *= -1;
-    Output.points[6][1] -= fd0;
-    fd1 *= -1;
-    boolean lb2 = false;
-if(fo0 != null){
-      fo1 = fo0.m4(ad1, ad2, ad3, ad4);
-}
-if(fo0 != null){
-      fo1 = fo0.m4(fo1, fo0, fo1, fo0);
-}
-    ab4 = fb0 || fb1;
-    for(int i0=0; i0<10; i0++){
-if(fo0 != null){
-          fo1 = fo0.m4(fo1, fo0, fo1, fo0, fd0, fd1, ad1, ad2, lb1, lb2, ab1, ab2);
+    boolean lb0 = true;
+if(fo1 != null){
+      fo0 = fo1.m4();
 }
 if(fo1 != null){
-          fo1.m1(ad3, ad4, fd0, fd1, ab3, ab4, fb0, fb1);
+      fo0 = fo1.m4(ad2, ad3, ad4, fd0, ab1, ab2, ab3, ab4);
 }
+    fd1 = ad1 - ad2;
+if(fo1 != null){
+      fo0 = fo1.m4(fo0, fo1, fo0, fo1);
+}
+    double ld1 = 481.855900904511;
+    Output.points[5][3] -= ad2;
+    double ld2 = 902.4988056734265;
+if(fo0 != null){
+      fb0 = fo0.m2(fo1, fo0, fo1, fo0, ad2, ad3, ad4, fd0, fb1, lb0, ab1, ab2);
+}
+    fd1 = ld1 + ld2;
+if(fo0 != null){
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0, ab3, ab4, fb0, fb1);
+}
+    ad1 *= -1;
+    Output.points[5][4] -= ad2;
+    Thought lo3 = Thought18.getInstance(ad3, ad4, fd0, fd1);
+    ld1 *= -1;
+    lb0 = !ab1;
+    if (ab2) {
+        boolean lb4 = true;
+        Thought lo5 = Thought14.getInstance(fo1, fo0, fo1, fo0, ld2, ad1, ad2, ad3);
+        ab2 = ad4 > fd0;
+        boolean lb6 = true;
 }
 Thought.STACK_COUNTER++;
-return lb1;
+return ab4;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
 } catch (CountDownExc e) {
 if(!e.surfaced()) {
@@ -789,37 +811,40 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    fd0 = fd1 - fd0;
-    fb1 = fb0 && fb1;
-if(ao1 != null){
-      fb0 = ao1.m2(ao2, ao3, ao4, fo0, fd1, fd0, fd1, fd0);
-}
-    fb1 = fd1 > fd0;
-    fb0 = fd1 > fd0;
-    Output.points[6][2] += fd1;
-    fd0 *= -1;
-    fb1 = fb0 && fb1;
-if(fo1 != null){
-      fb0 = fo1.m2();
-}
-    fb1 = fd1 > fd0;
-if(ao2 != null){
-      ao1 = ao2.m4(ao3, ao4, fo0, fo1, fb0, fb1, fb0, fb1);
-}
-if(ao2 != null){
-      ao1 = ao2.m4(fb0, fb1, fb0, fb1);
-}
+if (false) { throw new CountDownExc(-1); }
 if(ao3 != null){
-      fb0 = ao3.m2(fd1, fd0, fd1, fd0);
+          ao2 = ao3.m4(fb1, fb0, fb1, fb0);
 }
-    fb1 = fb0 || fb1;
-    boolean lb0 = false;
-    lb0 = fd1 < fd0;
-        fd1 = fd0 + fd1;
-    boolean lb1 = true;
+if(fo0 != null){
+      ao4 = fo0.m4();
+}
+    boolean lb0 = true;
+if(fo1 != null){
+      fd1 = fo1.m3(fd0, fd1, fd0, fd1, fb0, fb1, lb0, fb0);
+}
+    fd0 *= -1;
+    double ld1 = 632.5090747853429;
+    fd0 *= -1;
+    double ld2 = 882.4390535605419;
+    Output.points[5][5] -= fd0;
+    fd1 = ld1 + ld2;
+if(ao2 != null){
+      ao1 = ao2.m4(ao3, ao4, fo0, fo1);
+}
+    fb1 = fd0 < fd1;
+    Thought lo3 = Thought85.getInstance(ao1, ao2, ao3, ao4, ld1, ld2, fd0, fd1, lb0, fb0, fb1, lb0);
+    ld1 = ld2 - fd0;
+    fd1 = ld1 - ld2;
+    fd0 = fd1 - ld1;
+if(fo0 != null){
+      ld2 = fo0.m3(fo1, ao1, ao2, ao3, fb0, fb1, lb0, fb0);
+}
+if(ao4 != null){
+      fd0 = ao4.m3(fd1, ld1, ld2, fd0);
+}
 
 Thought.STACK_COUNTER++;
-return lb1;
+return fb1;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
 } catch (CountDownExc e) {
 if(!e.surfaced()) {
@@ -835,24 +860,39 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
+if (false) { throw new CountDownExc(-1); }
     boolean lb0 = true;
-    lb0 = ad1 > ad2;
-    ad3 *= -1;
-    ad4 *= -1;
-if(ao3 != null){
-      ao2 = ao3.m4(ao4, fo0, fo1, ao1);
+if(ao1 != null){
+      ad2 = ao1.m3(ao2, ao3, ao4, fo0, ad3, ad4, fd0, fd1);
 }
-    fb0 = fd0 > fd1;
-    fb1 = ad1 > ad2;
-    lb0 = ad3 > ad4;
-    fb0 = fd0 > fd1;
-    Thought lo1 = Thought9.getInstance(ao2, ao3, ao4, fo0, ad1, ad2, ad3, ad4, fb1, lb0, fb0, fb1);
+    ad1 = ad2 - ad3;
+    ad4 *= -1;
+    lb0 = fb0 || fb1;
 if(fo1 != null){
-      fo1.m2(fd0, fd1, ad1, ad2, lb0, fb0, fb1, lb0);
+      fo1.m2(lb0, fb0, fb1, lb0);
+}
+if(ao2 != null){
+      ao1 = ao2.m4();
+}
+if(ao3 != null){
+      ao3.m2(fd0, fd1, ad1, ad2, fb0, fb1, lb0, fb0);
+}
+if(fo0 != null){
+      ao4 = fo0.m4(fo1, ao1, ao2, ao3);
+}
+    fb1 = !lb0;
+if(ao4 != null){
+      ao4.m1(fo0, fo1, ao1, ao2, ad3, ad4, fd0, fd1, fb0, fb1, lb0, fb0);
+}
+    fb1 = ad1 > ad2;
+    boolean lb1 = false;
+    lb0 = lb1 && fb0;
+if(ao3 != null){
+      fb1 = ao3.m2(ao4, fo0, fo1, ao1, lb0, lb1, fb0, fb1);
 }
 
 Thought.STACK_COUNTER++;
-return fb0;
+return lb0;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
 } catch (CountDownExc e) {
 if(!e.surfaced()) {
@@ -868,37 +908,43 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    fd0 *= -1;
-if(ao1 != null){
-      fd1 = ao1.m3(ao2, ao3, ao4, fo0, fd0, fd1, fd0, fd1);
-}
-    ab1 = fd0 < fd1;
-if(ao1 != null){
-      fo1 = ao1.m4();
-}
-if(ao2 != null){
-      ao2.m1(ao3, ao4, fo0, fo1, ab2, ab3, ab4, fb0);
-}
+if (false) { throw new CountDownExc(-1); }
     fd0 = fd1 - fd0;
     fd1 = fd0 + fd1;
-    fd0 *= -1;
-if(ao1 != null){
-      fd1 = ao1.m3(fb1, ab1, ab2, ab3);
+    if (ab2) {
+        fd0 *= -1;
+if(ao3 != null){
+          ao2 = ao3.m4(fd1, fd0, fd1, fd0);
 }
-    boolean lb0 = false;
-    fd0 = fd1 + fd0;
-if(ao2 != null){
-      ab3 = ao2.m2(fd1, fd0, fd1, fd0);
-}
-    ab4 = fb0 && fb1;
-    fd1 *= -1;
-    lb0 = fd0 > fd1;
+        ab3 = fd1 > fd0;
+        ab4 = fb0 && fb1;
+        } else {
+        ab1 = fd1 > fd0;
 if(ao4 != null){
-      ao3 = ao4.m4(fo0, fo1, ao1, ao2);
+          ab2 = ao4.m2(fo0, fo1, ao1, ao2, fd1, fd0, fd1, fd0);
 }
-
+        Output.points[5][6] += fd1;
+if(ao4 != null){
+          ao3 = ao4.m4(ab3, ab4, fb0, fb1);
+}
+        ab1 = ab2 || ab3;
+        Output.points[5][7] += fd0;
+if(fo1 != null){
+          fo0 = fo1.m4();
+}
+        double ld0 = 433.6073584734657;
+if(ao2 != null){
+                  ao1 = ao2.m4(fd0, fd1, ld0, fd0, ab4, fb0, fb1, ab1);
+}
+        ab2 = fd1 > ld0;
+if(ao3 != null){
+          fd0 = ao3.m3(ao4, fo0, fo1, ao1);
+}
+        ab3 = fd1 > ld0;
+        fd0 = fd1 + ld0;
+}
 Thought.STACK_COUNTER++;
-return ab1;
+return ab4;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
 } catch (CountDownExc e) {
 if(!e.surfaced()) {
@@ -914,42 +960,25 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    ab1 = !ab2;
+if (false) { throw new CountDownExc(-1); }
 if(ao2 != null){
-      ao1 = ao2.m4(ao3, ao4, fo0, fo1, ad1, ad2, ad3, ad4, ab3, ab4, fb0, fb1);
+      ab1 = ao2.m2(ao3, ao4, fo0, fo1, ad2, ad3, ad4, fd0, ab2, ab3, ab4, fb0);
 }
-    Thought lo0 = Thought18.getInstance(fd0, fd1, ad1, ad2, ab1, ab2, ab3, ab4);
+    fb1 = ab1 || ab2;
+    ab3 = fd1 < ad1;
+    boolean lb0 = true;
+    boolean lb1 = false;
+    ab2 = ab3 && ab4;
+    if (fb0) {
+        Output.points[5][8] -= ad2;
 if(ao1 != null){
-      fb0 = ao1.m2(ao2, ao3, ao4, fo0, ad3, ad4, fd0, fd1);
+          ao1.m1(ao2, ao3, ao4, fo0, fb1, lb0, lb1, ab1);
 }
-if(fo1 != null){
-      fb1 = fo1.m2();
+        double ld2 = 986.5414054251524;
+        ab2 = ab3 || ab4;
 }
-    ad1 = ad2 - ad3;
-    ab1 = ad4 > fd0;
-if(ao1 != null){
-      ab2 = ao1.m2(ao2, ao3, ao4, fo0, ab3, ab4, fb0, fb1);
-}
-if(ao1 != null){
-      fo1 = ao1.m4(ab1, ab2, ab3, ab4);
-}
-    Output.points[6][3] -= fd1;
-    fb0 = ad1 < ad2;
-    fb1 = ab1 && ab2;
-if(ao2 != null){
-      ao2.m3(ad3, ad4, fd0, fd1);
-}
-    ab3 = ad1 < ad2;
-    ad3 *= -1;
-    ad4 = fd0 + fd1;
-    boolean lb1 = true;
-    ad1 = ad2 - ad3;
-if(ao4 != null){
-      ao3 = ao4.m4(fo0, fo1, ao1, ao2);
-}
-
 Thought.STACK_COUNTER++;
-return ab3;
+return fb0;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
 } catch (CountDownExc e) {
 if(!e.surfaced()) {
@@ -965,51 +994,43 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-if(fo0 != null){
-      fo0.m1(fo1, fo0, fo1, fo0, fd1, fd0, fd1, fd0, fb0, fb1, fb0, fb1);
-}
-    if (fb0) {
-        boolean lb0 = false;
-        Output.points[6][4] += fd1;
-        boolean lb1 = false;
-        double ld2 = 464.43301966407097;
-if(fo0 != null){
-          fo1 = fo0.m4(ld2, fd0, fd1, ld2, lb1, fb0, fb1, lb0);
-}
+if (false) { throw new CountDownExc(-1); }
 if(fo1 != null){
-          fo1.m1(fo0, fo1, fo0, fo1, fd0, fd1, ld2, fd0);
+      fb1 = fo1.m2(fd0, fd1, fd0, fd1);
 }
-        lb1 = !fb0;
-        fb1 = fd1 > ld2;
+    fb0 = fb1 || fb0;
+    double ld0 = 100.72013864065097;
+    ld0 = fd0 - fd1;
+    ld0 *= -1;
+    fb1 = fd0 > fd1;
+    ld0 = fd0 - fd1;
+    fb0 = !fb1;
+    fb0 = ld0 > fd0;
 if(fo1 != null){
-          fo0 = fo1.m4();
+      fo0 = fo1.m4(fo0, fo1, fo0, fo1, fd1, ld0, fd0, fd1);
 }
-        Output.points[6][5] -= fd0;
-        Output.points[6][6] -= fd1;
-        lb0 = ld2 > fd0;
-        lb1 = !fb0;
-        double ld3 = 759.1243600329458;
+    Output.points[6][0] += ld0;
+    fb1 = fb0 || fb1;
 if(fo0 != null){
-          fb1 = fo0.m2(fo1, fo0, fo1, fo0, lb0, lb1, fb0, fb1);
+      fd0 = fo0.m3(fb0, fb1, fb0, fb1);
 }
-        if (lb0) {
-if(fo0 != null){
-              fo1 = fo0.m4(lb1, fb0, fb1, lb0);
-}
-if(fo0 != null){
-              fo1 = fo0.m4(fd0, fd1, ld2, ld3);
-}
-            lb1 = !fb0;
-            boolean lb4 = true;
-            fd0 = fd1 - ld2;
-            if (fb0) {
-                Output.points[6][7] -= ld3;
-                fb1 = lb4 || lb0;
+    fb0 = fd1 > ld0;
+    fb1 = !fb0;
+    fb1 = fb0 && fb1;
+    fb0 = fd0 < fd1;
+    boolean lb1 = false;
 if(fo1 != null){
-                  fd0 = fo1.m3(fo0, fo1, fo0, fo1);
+      fo1.m1();
 }
-                fd1 *= -1;
-}}}
+    boolean lb2 = false;
+    Thought lo3 = Thought17.getInstance(ld0, fd0, fd1, ld0, lb2, fb0, fb1, lb1);
+    boolean lb4 = false;
+    Output.points[6][1] -= fd0;
+if(fo0 != null){
+      lb2 = fo0.m2(fo1, fo0, fo1, fo0);
+}
+    lb4 = fd1 > ld0;
+
 Thought.STACK_COUNTER++;
 return fd0;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
@@ -1027,22 +1048,32 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    ab1 = ab2 || ab3;
-    ab4 = fd1 < fd0;
+if (false) { throw new CountDownExc(-1); }
 if(fo1 != null){
-      fo0 = fo1.m4(fo0, fo1, fo0, fo1, fd1, fd0, fd1, fd0, fb0, fb1, ab1, ab2);
+      fd0 = fo1.m3(fo0, fo1, fo0, fo1, fd1, fd0, fd1, fd0, ab2, ab3, ab4, fb0);
 }
-    ab3 = fd1 < fd0;
-    fd1 = fd0 - fd1;
-    ab4 = !fb0;
-    boolean lb0 = false;
+    Output.points[6][2] += fd1;
 if(fo0 != null){
-      fo0.m1(fd0, fd1, fd0, fd1, fb0, fb1, lb0, ab1);
+      fd0 = fo0.m3(fo1, fo0, fo1, fo0, fb1, ab1, ab2, ab3);
 }
-    fd0 *= -1;
+    ab4 = fd1 < fd0;
+if(fo0 != null){
+      fo1 = fo0.m4(fd1, fd0, fd1, fd0);
+}
 if(fo0 != null){
       fo1 = fo0.m4(fo1, fo0, fo1, fo0, fd1, fd0, fd1, fd0);
 }
+if(fo1 != null){
+      fo1.m3(fb0, fb1, ab1, ab2);
+}
+if(fo1 != null){
+      fo0 = fo1.m4();
+}
+    Thought lo0 = Thought96.getInstance(fd1, fd0, fd1, fd0, ab3, ab4, fb0, fb1);
+if(fo1 != null){
+      fo0 = fo1.m4(fo0, fo1, fo0, fo1);
+}
+    Thought lo1 = Thought2.getInstance(fo0, fo1, fo0, fo1, fd1, fd0, fd1, fd0, ab1, ab2, ab3, ab4);
 
 Thought.STACK_COUNTER++;
 return fd1;
@@ -1061,38 +1092,32 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-if(fo1 != null){
-      fb0 = fo1.m2();
+if (false) { throw new CountDownExc(-1); }
+    ad1 = ad2 + ad3;
+if(fo0 != null){
+      ad4 = fo0.m3(fo1, fo0, fo1, fo0, fb0, fb1, fb0, fb1);
 }
-if(fo1 != null){
-      fo0 = fo1.m4(fo0, fo1, fo0, fo1, fb1, fb0, fb1, fb0);
+    fb0 = !fb1;
+    fd0 *= -1;
+if(fo0 != null){
+      fo1 = fo0.m4(fd1, ad1, ad2, ad3);
 }
+    if (fb0) {
 if(fo1 != null){
-      fo0 = fo1.m4(fb1, fb0, fb1, fb0);
+          fb1 = fo1.m2(fo0, fo1, fo0, fo1, ad4, fd0, fd1, ad1);
 }
-    boolean lb0 = false;
-    Output.points[6][8] += ad1;
-    boolean lb1 = true;
-    lb1 = fb0 && fb1;
-    lb0 = lb1 || fb0;
+        boolean lb0 = false;
 if(fo1 != null){
-      fo0 = fo1.m4(ad2, ad3, ad4, fd0);
+          fo0 = fo1.m4(lb0, fb0, fb1, lb0);
 }
-    fb1 = lb0 && lb1;
-    fb0 = fd1 < ad1;
-    Thought lo2 = Thought5.getInstance(fo0, fo1, fo0, fo1);
-    fb1 = !lb0;
-    ad2 *= -1;
-if(fo1 != null){
-      fo0 = fo1.m4(fo0, fo1, fo0, fo1, ad3, ad4, fd0, fd1, lb1, fb0, fb1, lb0);
+        } else if (fb1) {
+        } else if (fb0) {
+if(fo0 != null){
+          ad2 = fo0.m3();
 }
-    double ld3 = 91.98712974545556;
-    Output.points[7][0] -= ld3;
-    ad1 = ad2 - ad3;
-    ad4 = fd0 - fd1;
-    Thought lo4 = Thought12.getInstance(ld3, ad1, ad2, ad3, lb1, fb0, fb1, lb0);
-    lb1 = fb0 || fb1;
-
+        ad3 *= -1;
+        fb1 = !fb0;
+}
 Thought.STACK_COUNTER++;
 return ad4;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
@@ -1110,54 +1135,40 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    Thought lo0 = Thought5.getInstance(fo0, fo1, fo0, fo1, ad2, ad3, ad4, fd0);
-    Thought lo1 = Thought16.getInstance();
-if(fo0 != null){
-      ab1 = fo0.m2(fo1, fo0, fo1, fo0, ab2, ab3, ab4, fb0);
-}
-    Output.points[7][1] += fd1;
+if (false) { throw new CountDownExc(-1); }
+    ad1 *= -1;
+    double ld0 = 24.153471261245024;
+    ad1 = ad2 + ad3;
 if(fo1 != null){
-      fo1.m2(fb1, ab1, ab2, ab3);
+      ad4 = fo1.m3(fd0, fd1, ld0, ad1, ab2, ab3, ab4, fb0);
 }
-    ad1 = ad2 - ad3;
-    ad4 *= -1;
-    ab4 = fb0 && fb1;
-    Thought lo2 = Thought14.getInstance(fd0, fd1, ad1, ad2);
-    ad3 = ad4 - fd0;
-    ab1 = fd1 > ad1;
-if(fo0 != null){
-      ab2 = fo0.m2(fo1, fo0, fo1, fo0);
+    double ld1 = 486.2716463168774;
+    ad1 = ad2 + ad3;
+    fb1 = !ab1;
+    ab2 = ad4 > fd0;
+    Thought lo2 = Thought27.getInstance(fo0, fo1, fo0, fo1);
+if(fo1 != null){
+      fo0 = fo1.m4(fo0, fo1, fo0, fo1, fd1, ld0, ld1, ad1, ab3, ab4, fb0, fb1);
 }
-    ad2 *= -1;
-if(fo0 != null){
-      fo1 = fo0.m4(fo1, fo0, fo1, fo0, ad3, ad4, fd0, fd1, ab3, ab4, fb0, fb1);
-}
-    ab1 = ad1 < ad2;
-if(fo0 != null){
-      fo1 = fo0.m4(ad3, ad4, fd0, fd1, ab2, ab3, ab4, fb0);
-}
-if(fo0 != null){
-      fo1 = fo0.m4(fo1, fo0, fo1, fo0, ad1, ad2, ad3, ad4);
+    boolean lb3 = false;
+if(fo1 != null){
+      fo0 = fo1.m4(fo0, fo1, fo0, fo1, lb3, ab1, ab2, ab3);
 }
 if(fo1 != null){
-      fb1 = fo1.m2();
+      fo0 = fo1.m4(ad2, ad3, ad4, fd0);
 }
-if(fo1 != null){
-      fo0 = fo1.m4(fo0, fo1, fo0, fo1, ab1, ab2, ab3, ab4);
-}
-    fd0 = fd1 + ad1;
-    fb0 = ad2 < ad3;
-    ad4 = fd0 - fd1;
+    Thought lo4 = Thought85.getInstance(fo0, fo1, fo0, fo1, fd1, ld0, ld1, ad1);
+    ab4 = !fb0;
+    fb1 = !lb3;
+    ab1 = ab2 || ab3;
+    ab4 = ad2 > ad3;
 if(fo0 != null){
-      ad1 = fo0.m3(fb1, ab1, ab2, ab3);
+      ad4 = fo0.m3(fb0, fb1, lb3, ab1);
 }
-    Output.points[7][2] -= ad2;
-if(fo1 != null){
-      fo1.m3(ad3, ad4, fd0, fd1);
-}
+    fd0 = fd1 + ld0;
 
 Thought.STACK_COUNTER++;
-return ad1;
+return ld1;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
 } catch (CountDownExc e) {
 if(!e.surfaced()) {
@@ -1173,29 +1184,49 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
+if (false) { throw new CountDownExc(-1); }
+    fd0 *= -1;
+    boolean lb0 = false;
+    for(int i0=0; i0<10; i0++){
+        lb0 = fb0 && fb1;
+        Thought lo1 = Thought0.getInstance();
+        Output.points[6][3] += fd1;
+        fd0 *= -1;
+        fd1 *= -1;
+if(ao3 != null){
+          ao2 = ao3.m4(fd0, fd1, fd0, fd1, lb0, fb0, fb1, lb0);
+}
+if(ao4 != null){
+          ao4.m3(fo0, fo1, ao1, ao2);
+}
+if(ao3 != null){
+          ao3.m3(ao4, fo0, fo1, ao1, fd0, fd1, fd0, fd1, fb0, fb1, lb0, fb0);
+}
+if(ao2 != null){
+          fb1 = ao2.m2(ao3, ao4, fo0, fo1, lb0, fb0, fb1, lb0);
+}
+        fd0 *= -1;
+        fb0 = fd1 > fd0;
+if(ao2 != null){
+          ao1 = ao2.m4(fd1, fd0, fd1, fd0);
+}
+        fb1 = !lb0;
+        Output.points[6][4] -= fd1;
+        fb0 = !fb1;
+        }
+    Thought lo2 = Thought34.getInstance(ao3, ao4, fo0, fo1, fd0, fd1, fd0, fd1);
+    lb0 = !fb0;
+    boolean lb3 = true;
+    double ld4 = 94.29223236951289;
+    ld4 = fd0 + fd1;
+    boolean lb5 = false;
+    boolean lb6 = true;
 if(ao1 != null){
-      fd1 = ao1.m3(ao2, ao3, ao4, fo0);
+      ld4 = ao1.m3(lb5, lb6, fb0, fb1);
 }
-if(fo1 != null){
-      fd0 = fo1.m3(ao1, ao2, ao3, ao4, fd1, fd0, fd1, fd0, fb1, fb0, fb1, fb0);
+if(ao3 != null){
+      ao2 = ao3.m4();
 }
-    Thought lo0 = Thought17.getInstance(fd1, fd0, fd1, fd0, fb1, fb0, fb1, fb0);
-    fb1 = fb0 || fb1;
-    fb0 = !fb1;
-    Thought lo1 = Thought13.getInstance(fo0, fo1, ao1, ao2, fd1, fd0, fd1, fd0);
-if(ao4 != null){
-      ao3 = ao4.m4();
-}
-if(fo0 != null){
-      fb0 = fo0.m2(fo1, ao1, ao2, ao3, fb1, fb0, fb1, fb0);
-}
-if(ao4 != null){
-      fd1 = ao4.m3(fb1, fb0, fb1, fb0);
-}
-if(fo0 != null){
-      fd0 = fo0.m3(fd1, fd0, fd1, fd0);
-}
-    fd1 *= -1;
 
 Thought.STACK_COUNTER++;
 return fd0;
@@ -1214,25 +1245,42 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    Output.points[7][3] -= ad2;
-if(ao2 != null){
-      fb1 = ao2.m2(ao3, ao4, fo0, fo1);
+if (false) { throw new CountDownExc(-1); }
+    Output.points[6][5] -= ad1;
+    fb0 = ad2 < ad3;
+    boolean lb0 = false;
+    fb0 = ad4 > fd0;
+if(ao3 != null){
+      ao2 = ao3.m4(fd1, ad1, ad2, ad3, fb1, lb0, fb0, fb1);
 }
-if(ao2 != null){
-      ao1 = ao2.m4(ao3, ao4, fo0, fo1, ad3, ad4, fd0, fd1, fb0, fb1, fb0, fb1);
+if(fo0 != null){
+      ao4 = fo0.m4(fo1, ao1, ao2, ao3);
 }
-    ad1 = ad2 - ad3;
-    ad4 *= -1;
-    Thought lo0 = Thought9.getInstance(fd0, fd1, ad1, ad2, fb0, fb1, fb0, fb1);
-    ad3 *= -1;
-    if (fb0) {
-        Thought lo1 = Thought3.getInstance(ao1, ao2, ao3, ao4, ad4, fd0, fd1, ad1);
-        ad2 = ad3 + ad4;
-        fd0 *= -1;
-        double ld2 = 262.9687649290639;
+    lb0 = fb0 || fb1;
+        lb0 = fb0 || fb1;
+    lb0 = !fb0;
+    boolean lb1 = true;
+if(fo0 != null){
+      ao4 = fo0.m4(fo1, ao1, ao2, ao3, ad4, fd0, fd1, ad1, fb0, fb1, lb0, lb1);
 }
+if(fo0 != null){
+      ao4 = fo0.m4(fo1, ao1, ao2, ao3, fb0, fb1, lb0, lb1);
+}
+if(ao4 != null){
+      fb0 = ao4.m2(ad2, ad3, ad4, fd0);
+}
+    boolean lb2 = true;
+if(fo0 != null){
+      fo0.m2(fo1, ao1, ao2, ao3, fd1, ad1, ad2, ad3);
+}
+    fb0 = ad4 < fd0;
+    fd1 = ad1 - ad2;
+if(ao4 != null){
+      fb1 = ao4.m2(lb0, lb1, lb2, fb0);
+}
+
 Thought.STACK_COUNTER++;
-return fd1;
+return ad3;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
 } catch (CountDownExc e) {
 if(!e.surfaced()) {
@@ -1248,24 +1296,40 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
+if (false) { throw new CountDownExc(-1); }
+    fd1 = fd0 - fd1;
     fd0 = fd1 + fd0;
-    ab2 = fd1 < fd0;
-if(ao1 != null){
-      ab3 = ao1.m2();
+    fd1 = fd0 + fd1;
+    Output.points[6][6] += fd0;
+if(ao2 != null){
+      ao1 = ao2.m4();
 }
-    fd1 *= -1;
-    fd0 = fd1 - fd0;
-    ab4 = fd1 > fd0;
-    fb0 = fd1 > fd0;
-    fb1 = ab1 || ab2;
-    boolean lb0 = false;
-    Thought lo1 = Thought9.getInstance(ao2, ao3, ao4, fo0, ab2, ab3, ab4, fb0);
-    fb1 = lb0 && ab1;
-    Thought lo2 = Thought9.getInstance(ab2, ab3, ab4, fb0);
-    boolean lb3 = false;
-
+    ab1 = fd1 < fd0;
+if(ao4 != null){
+      ao3 = ao4.m4(fd1, fd0, fd1, fd0, ab2, ab3, ab4, fb0);
+}
+    fb1 = !ab1;
+    Thought lo0 = Thought14.getInstance(fo0, fo1, ao1, ao2);
+if(ao3 != null){
+      fd1 = ao3.m3(ao4, fo0, fo1, ao1, fd0, fd1, fd0, fd1, ab2, ab3, ab4, fb0);
+}
+if(ao3 != null){
+      ao2 = ao3.m4(ao4, fo0, fo1, ao1, fb1, ab1, ab2, ab3);
+}
+    double ld1 = 278.92694039262085;
+    if (ab4) {
+if(ao2 != null){
+          fb0 = ao2.m2(ld1, fd0, fd1, ld1);
+}
+if(ao4 != null){
+          ao3 = ao4.m4(fo0, fo1, ao1, ao2, fd0, fd1, ld1, fd0);
+}
+        fd1 = ld1 + fd0;
+        Thought lo2 = Thought90.getInstance(fb1, ab1, ab2, ab3);
+        Output.points[6][7] += fd1;
+}
 Thought.STACK_COUNTER++;
-return fd1;
+return ld1;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
 } catch (CountDownExc e) {
 if(!e.surfaced()) {
@@ -1281,29 +1345,30 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    boolean lb0 = true;
-    lb0 = !ab1;
-if(ao3 != null){
-      ao2 = ao3.m4(ad1, ad2, ad3, ad4);
-}
+if (false) { throw new CountDownExc(-1); }
+    Output.points[6][8] -= ad2;
+    ab2 = ab3 || ab4;
+    Output.points[7][0] += ad3;
+    Thought lo0 = Thought81.getInstance();
+    boolean lb1 = true;
+    boolean lb2 = true;
     for(int i0=0; i0<10; i0++){
-        Output.points[7][4] -= fd0;
-        ab2 = fd1 > ad1;
-        ad2 = ad3 + ad4;
-        ab3 = !ab4;
-if(ao4 != null){
-          fd0 = ao4.m3(fo0, fo1, ao1, ao2);
+        double ld3 = 976.5885417964763;
+        ad3 = ad4 - fd0;
+        Output.points[7][1] += fd1;
+        ab3 = ab4 && fb0;
+if(ao1 != null){
+          ld3 = ao1.m3(ad1, ad2, ad3, ad4, fb1, lb1, lb2, ab1);
 }
-        fb0 = fb1 && lb0;
-        fd1 = ad1 + ad2;
-        Thought lo1 = Thought2.getInstance(ao3, ao4, fo0, fo1, ad3, ad4, fd0, fd1, ab1, ab2, ab3, ab4);
-        Thought lo2 = Thought4.getInstance(ad1, ad2, ad3, ad4, fb0, fb1, lb0, ab1);
-        Output.points[7][5] += fd0;
-        double ld3 = 155.82963734065274;
-        ab2 = !ab3;
+        ab2 = ab3 && ab4;
+if(ao3 != null){
+          ao2 = ao3.m4(ao4, fo0, fo1, ao1);
 }
+        fd0 = fd1 + ld3;
+        for(int i1=0; i1<10; i1++){
+}}
 Thought.STACK_COUNTER++;
-return fd1;
+return ad2;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
 } catch (CountDownExc e) {
 if(!e.surfaced()) {
@@ -1319,36 +1384,25 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
+if (false) { throw new CountDownExc(-1); }
+    fd0 = fd1 - fd0;
+if(fo0 != null){
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0, fd1, fd0, fd1, fd0, fb0, fb1, fb0, fb1);
+}
+    fd1 = fd0 + fd1;
+    fd0 = fd1 - fd0;
 if(fo1 != null){
-      fo0 = fo1.m4(fo0, fo1, fo0, fo1, fd0, fd1, fd0, fd1);
+      fd1 = fo1.m3(fo0, fo1, fo0, fo1, fb0, fb1, fb0, fb1);
 }
-    boolean lb0 = true;
-    Output.points[7][6] += fd0;
+    fd0 = fd1 - fd0;
+    Output.points[7][2] += fd1;
 if(fo0 != null){
-      fd1 = fo0.m3();
+      fo0.m1(fd0, fd1, fd0, fd1);
 }
-if(fo0 != null){
-      fo1 = fo0.m4(fo1, fo0, fo1, fo0, lb0, fb0, fb1, lb0);
-}
-    Thought lo1 = Thought14.getInstance(fb0, fb1, lb0, fb0);
-if(fo1 != null){
-      fo1.m3(fd0, fd1, fd0, fd1);
-}
-    fd0 = fd1 + fd0;
-if(fo0 != null){
-      fo0.m3(fo1, fo0, fo1, fo0);
-}
-    double ld2 = 88.77588318096407;
-    fb1 = fd0 > fd1;
-    boolean lb3 = false;
-    ld2 = fd0 - fd1;
-if(fo1 != null){
-      fo1.m2(fo0, fo1, fo0, fo1, ld2, fd0, fd1, ld2, lb0, lb3, fb0, fb1);
-}
-if(fo0 != null){
-      lb0 = fo0.m2(fd0, fd1, ld2, fd0, lb3, fb0, fb1, lb0);
-}
-    lb3 = fd1 > ld2;
+    fb0 = fb1 || fb0;
+    fb1 = fb0 && fb1;
+    Thought lo0 = Thought21.getInstance(fo1, fo0, fo1, fo0, fd0, fd1, fd0, fd1);
+    fb0 = fd0 < fd1;
 
 Thought.STACK_COUNTER++;
 return fo1;
@@ -1367,49 +1421,41 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    ab1 = ab2 && ab3;
-    Output.points[7][7] += fd1;
-    Thought lo0 = Thought6.getInstance(fo0, fo1, fo0, fo1, fd0, fd1, fd0, fd1);
-    boolean lb1 = true;
-if(fo0 != null){
-      fo0.m2();
-}
-    fd0 = fd1 + fd0;
-if(fo0 != null){
-      fo1 = fo0.m4(fo1, fo0, fo1, fo0, ab3, ab4, fb0, fb1);
-}
-    lb1 = ab1 || ab2;
-    boolean lb2 = true;
+if (false) { throw new CountDownExc(-1); }
+    ab2 = !ab3;
+    fd0 = fd1 - fd0;
+    fd1 *= -1;
+    ab4 = !fb0;
+        fd0 = fd1 - fd0;
     fd1 = fd0 + fd1;
-    fd0 *= -1;
 if(fo1 != null){
-      fo1.m1(ab2, ab3, ab4, fb0);
+      fo0 = fo1.m4(fb1, ab1, ab2, ab3);
 }
-    fd1 = fd0 + fd1;
-    Thought lo3 = Thought3.getInstance(fd0, fd1, fd0, fd1);
-    Output.points[7][8] += fd0;
-    boolean lb4 = false;
-    fd1 = fd0 + fd1;
-    Thought lo5 = Thought18.getInstance(fo0, fo1, fo0, fo1);
-    fb0 = !fb1;
-if(fo1 != null){
-      fo0 = fo1.m4(fo0, fo1, fo0, fo1, fd0, fd1, fd0, fd1, lb1, lb2, lb4, ab1);
-}
-    fd0 *= -1;
-    ab2 = ab3 || ab4;
-    double ld6 = 878.311710906236;
-if(fo1 != null){
-      fo0 = fo1.m4(fd0, fd1, ld6, fd0, fb0, fb1, lb1, lb2);
-}
-    Output.points[8][0] += fd1;
 if(fo0 != null){
-      ld6 = fo0.m3(fo1, fo0, fo1, fo0, fd0, fd1, ld6, fd0);
+      ab4 = fo0.m2();
 }
-    double ld7 = 849.0422790153019;
-    fd0 = fd1 + ld6;
+if(fo0 != null){
+      fo1 = fo0.m4(fd0, fd1, fd0, fd1, fb0, fb1, ab1, ab2);
+}
+    ab3 = fd0 < fd1;
+    boolean lb0 = false;
+    double ld1 = 877.813998519752;
+    ab3 = ld1 > fd0;
+if(fo1 != null){
+      ab4 = fo1.m2(fo0, fo1, fo0, fo1);
+}
+    Thought lo2 = Thought78.getInstance(fo0, fo1, fo0, fo1, fd1, ld1, fd0, fd1, fb0, fb1, lb0, ab1);
+if(fo1 != null){
+      fo0 = fo1.m4(fo0, fo1, fo0, fo1, ab2, ab3, ab4, fb0);
+}
+        double ld3 = 228.44762181179527;
+if(fo1 != null){
+      fo0 = fo1.m4(ld1, ld3, fd0, fd1);
+}
+    fb1 = ld1 > ld3;
 
 Thought.STACK_COUNTER++;
-return fo1;
+return fo0;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
 } catch (CountDownExc e) {
 if(!e.surfaced()) {
@@ -1425,50 +1471,36 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    fb0 = ad2 < ad3;
-    ad4 = fd0 - fd1;
-    boolean lb0 = true;
-    fb0 = fb1 || lb0;
-    ad1 = ad2 + ad3;
-    ad4 = fd0 + fd1;
+if (false) { throw new CountDownExc(-1); }
+    fb0 = !fb1;
+    boolean lb0 = false;
+    Thought lo1 = Thought6.getInstance(fo1, fo0, fo1, fo0, ad1, ad2, ad3, ad4);
 if(fo0 != null){
-      fb0 = fo0.m2();
+      fo1 = fo0.m4(lb0, fb0, fb1, lb0);
 }
-if(fo0 != null){
-      fo1 = fo0.m4(fo1, fo0, fo1, fo0, fb1, lb0, fb0, fb1);
-}
-    double ld1 = 517.6533783140251;
     boolean lb2 = true;
-    lb0 = ld1 > ad1;
-if(fo0 != null){
-      fo1 = fo0.m4(lb2, fb0, fb1, lb0);
-}
-    ad2 = ad3 - ad4;
-    lb2 = fb0 && fb1;
-if(fo0 != null){
-      fo1 = fo0.m4(fd0, fd1, ld1, ad1);
-}
-if(fo0 != null){
-      fo1 = fo0.m4(fo1, fo0, fo1, fo0);
-}
-if(fo0 != null){
-      fo1 = fo0.m4(fo1, fo0, fo1, fo0, ad2, ad3, ad4, fd0, lb0, lb2, fb0, fb1);
-}
-    fd1 = ld1 - ad1;
+    lb2 = !fb0;
+    fd0 *= -1;
+    fb1 = lb0 && lb2;
 if(fo1 != null){
-      ad2 = fo1.m3(ad3, ad4, fd0, fd1, lb0, lb2, fb0, fb1);
+      fo1.m3();
 }
-    lb0 = lb2 || fb0;
-    Thought lo3 = Thought2.getInstance(fo0, fo1, fo0, fo1, ld1, ad1, ad2, ad3);
-    Thought lo4 = Thought17.getInstance();
-    boolean lb5 = true;
-    Output.points[8][1] += ad4;
+if(fo1 != null){
+      fo0 = fo1.m4(fd1, ad1, ad2, ad3, fb0, fb1, lb0, lb2);
+}
 if(fo0 != null){
-      fd0 = fo0.m3(fo1, fo0, fo1, fo0, fb0, fb1, lb0, lb2);
+      fb0 = fo0.m2(fo1, fo0, fo1, fo0);
+}
+    Output.points[7][3] -= ad4;
+if(fo0 != null){
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0, fd0, fd1, ad1, ad2, fb1, lb0, lb2, fb0);
+}
+if(fo1 != null){
+      fo1.m1(fo0, fo1, fo0, fo1, fb1, lb0, lb2, fb0);
 }
 
 Thought.STACK_COUNTER++;
-return fo1;
+return fo0;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
 } catch (CountDownExc e) {
 if(!e.surfaced()) {
@@ -1484,45 +1516,37 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    ab1 = !ab2;
-    double ld0 = 830.0992243039684;
-    ab3 = ab4 && fb0;
+if (false) { throw new CountDownExc(-1); }
+if(fo0 != null){
+      fo1 = fo0.m4(ad1, ad2, ad3, ad4);
+}
+if(fo1 != null){
+      fo1.m1(fo0, fo1, fo0, fo1, fd0, fd1, ad1, ad2);
+}
+    Thought lo0 = Thought7.getInstance(ab2, ab3, ab4, fb0);
+if(fo1 != null){
+      fo0 = fo1.m4();
+}
     boolean lb1 = false;
-    ld0 *= -1;
-    Thought lo2 = Thought19.getInstance(fb0, fb1, lb1, ab1);
-    Thought lo3 = Thought14.getInstance(ad1, ad2, ad3, ad4);
-    ab2 = !ab3;
-    ab4 = fd0 < fd1;
-    ld0 = ad1 - ad2;
+    ad3 = ad4 + fd0;
+    boolean lb2 = true;
 if(fo0 != null){
-      fo0.m1(fo1, fo0, fo1, fo0);
+      fd1 = fo0.m3(ad1, ad2, ad3, ad4, ab4, fb0, fb1, lb1);
 }
+    fd0 *= -1;
 if(fo0 != null){
-      fo1 = fo0.m4(fo1, fo0, fo1, fo0, ad3, ad4, fd0, fd1, fb0, fb1, lb1, ab1);
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0);
 }
-    double ld4 = 70.15829341819929;
-    ld0 *= -1;
-    boolean lb5 = true;
-    double ld6 = 734.9795293342171;
-        boolean lb7 = false;
+    Thought lo3 = Thought96.getInstance(fo1, fo0, fo1, fo0, fd1, ad1, ad2, ad3, lb2, ab1, ab2, ab3);
+    Thought lo4 = Thought73.getInstance(fo1, fo0, fo1, fo0, ab4, fb0, fb1, lb1);
+    lb2 = ab1 || ab2;
+    ab3 = !ab4;
+    Thought lo5 = Thought5.getInstance(ad4, fd0, fd1, ad1);
+    ad2 = ad3 - ad4;
 if(fo1 != null){
-      fo1.m2(ld4, ld6, ad1, ad2, lb7, ab1, ab2, ab3);
+      fb0 = fo1.m2(fo0, fo1, fo0, fo1, fd0, fd1, ad1, ad2);
 }
-    ab4 = !fb0;
-if(fo0 != null){
-      ad3 = fo0.m3(fo1, fo0, fo1, fo0, ad4, fd0, fd1, ld0);
-}
-    for(int i0=0; i0<10; i0++){
-        ld4 = ld6 - ad1;
-        double ld8 = 307.9147347812624;
-if(fo1 != null){
-          ad1 = fo1.m3();
-}
-if(fo1 != null){
-          fo0 = fo1.m4(fo0, fo1, fo0, fo1, fb1, lb1, lb5, lb7);
-}
-        ab1 = ab2 && ab3;
-}
+
 Thought.STACK_COUNTER++;
 return fo0;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
@@ -1540,57 +1564,33 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
+if (false) { throw new CountDownExc(-1); }
 if(ao2 != null){
-      ao2.m2(fb0, fb1, fb0, fb1);
+      fb1 = ao2.m2(fb0, fb1, fb0, fb1);
 }
-    fb0 = fb1 || fb0;
-    fb1 = fd1 < fd0;
+if(ao3 != null){
+      ao3.m1();
+}
 if(ao4 != null){
-      ao3 = ao4.m4(fd1, fd0, fd1, fd0);
+      fb0 = ao4.m2(fd0, fd1, fd0, fd1, fb1, fb0, fb1, fb0);
 }
+    fd0 *= -1;
+    fb1 = fb0 && fb1;
     fd1 = fd0 + fd1;
+    boolean lb0 = true;
+if(fo1 != null){
+      fo0 = fo1.m4(ao1, ao2, ao3, ao4);
+}
+    fd0 *= -1;
+    lb0 = fb0 && fb1;
+        boolean lb1 = false;
+    lb0 = lb1 || fb0;
 if(fo0 != null){
-      fo0.m2(fo1, ao1, ao2, ao3);
+      fb1 = fo0.m2(fo1, ao1, ao2, ao3, fd1, fd0, fd1, fd0, lb0, lb1, fb0, fb1);
 }
-    boolean lb0 = false;
-if(ao4 != null){
-      fd0 = ao4.m3(fo0, fo1, ao1, ao2, fd1, fd0, fd1, fd0, lb0, fb0, fb1, lb0);
-}
-    fb0 = !fb1;
-if(ao4 != null){
-      ao3 = ao4.m4(fd1, fd0, fd1, fd0, lb0, fb0, fb1, lb0);
-}
-    double ld1 = 686.3996573366255;
-    fd0 = fd1 - ld1;
-    Thought lo2 = Thought2.getInstance(fo0, fo1, ao1, ao2, fd0, fd1, ld1, fd0);
-    fb0 = !fb1;
-if(ao3 != null){
-      fd1 = ao3.m3();
-}
-if(fo0 != null){
-      ao4 = fo0.m4(fo1, ao1, ao2, ao3, lb0, fb0, fb1, lb0);
-}
-    double ld3 = 457.02282779564996;
-    Thought lo4 = Thought18.getInstance(fb0, fb1, lb0, fb0);
-if(fo0 != null){
-      ao4 = fo0.m4(ld1, ld3, fd0, fd1);
-}
-        Thought lo5 = Thought17.getInstance(fo1, ao1, ao2, ao3);
-    boolean lb6 = false;
-if(ao4 != null){
-      ao4.m3(fo0, fo1, ao1, ao2, ld1, ld3, fd0, fd1, fb0, fb1, lb0, lb6);
-}
-    boolean lb7 = false;
-if(ao3 != null){
-      ld1 = ao3.m3(ld3, fd0, fd1, ld1, lb7, fb0, fb1, lb0);
-}
-if(ao4 != null){
-      ao4.m3(fo0, fo1, ao1, ao2, ld3, fd0, fd1, ld1);
-}
-if(ao3 != null){
-      ao3.m3();
-}
-    boolean lb8 = true;
+    boolean lb2 = false;
+    lb0 = lb1 && lb2;
+    Output.points[7][4] -= fd1;
 
 Thought.STACK_COUNTER++;
 return ao4;
@@ -1609,54 +1609,23 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    for(int i0=0; i0<10; i0++){
-if(ao2 != null){
-          ao1 = ao2.m4(ao3, ao4, fo0, fo1, fb1, fb0, fb1, fb0);
-}
-        fb1 = fb0 || fb1;
-        fb0 = ad2 < ad3;
+if (false) { throw new CountDownExc(-1); }
+    Output.points[7][5] -= ad1;
+    fb1 = ad2 < ad3;
+    boolean lb0 = false;
 if(ao1 != null){
-          ao1.m2(fb1, fb0, fb1, fb0);
+      ad4 = ao1.m3(ao2, ao3, ao4, fo0, lb0, fb0, fb1, lb0);
 }
-        ad4 = fd0 + fd1;
-        Output.points[8][2] -= ad1;
-if(ao3 != null){
-          ao2 = ao3.m4(ad2, ad3, ad4, fd0);
-}
-        fb1 = fd1 < ad1;
-if(fo0 != null){
-          ao4 = fo0.m4(fo1, ao1, ao2, ao3);
-}
-        Output.points[8][3] -= ad2;
-        boolean lb0 = false;
-if(ao4 != null){
-          ad3 = ao4.m3(fo0, fo1, ao1, ao2, ad4, fd0, fd1, ad1, lb0, fb0, fb1, lb0);
-}
-if(ao4 != null){
-          ao3 = ao4.m4(ad2, ad3, ad4, fd0, fb0, fb1, lb0, fb0);
-}
-        boolean lb1 = true;
-        Thought lo2 = Thought3.getInstance(fo0, fo1, ao1, ao2, fd1, ad1, ad2, ad3);
-if(ao4 != null){
-          ao3 = ao4.m4();
-}
-        boolean lb3 = true;
-        lb3 = !fb0;
+    fb0 = fd0 < fd1;
+    fb1 = lb0 && fb0;
 if(fo1 != null){
-          fo0 = fo1.m4(ao1, ao2, ao3, ao4, fb1, lb0, lb1, lb3);
+      fb1 = fo1.m2(ad1, ad2, ad3, ad4);
 }
-        Output.points[8][4] -= ad4;
-if(fo0 != null){
-          fb0 = fo0.m2(fb1, lb0, lb1, lb3);
-}
-        double ld4 = 114.57715011078244;
-if(ao1 != null){
-          fo1 = ao1.m4(ad4, fd0, fd1, ld4);
-}
-        ad1 = ad2 - ad3;
-}
+    fd0 = fd1 + ad1;
+        double ld1 = 8.130196523347463;
+
 Thought.STACK_COUNTER++;
-return ao2;
+return ao1;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
 } catch (CountDownExc e) {
 if(!e.surfaced()) {
@@ -1672,56 +1641,46 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
+if (false) { throw new CountDownExc(-1); }
+if(ao3 != null){
+      ao2 = ao3.m4(ao4, fo0, fo1, ao1, fd1, fd0, fd1, fd0);
+}
+    ab1 = ab2 || ab3;
+    boolean lb0 = false;
+if(ao3 != null){
+      ao2 = ao3.m4(ab3, ab4, fb0, fb1);
+}
+    fd1 *= -1;
+    lb0 = !ab1;
     ab2 = ab3 || ab4;
-if(ao1 != null){
-      ao1.m3(ao2, ao3, ao4, fo0);
+    fb0 = fd0 > fd1;
+    fb1 = fd0 > fd1;
+    Thought lo1 = Thought52.getInstance();
+    boolean lb2 = true;
+    lb0 = lb2 && ab1;
+    ab2 = fd0 > fd1;
+    Output.points[7][6] -= fd0;
+    ab3 = ab4 || fb0;
+    fb1 = !lb0;
+    lb2 = fd1 > fd0;
+if(fo0 != null){
+      ao4 = fo0.m4(fd1, fd0, fd1, fd0, ab1, ab2, ab3, ab4);
 }
 if(fo1 != null){
-      fd0 = fo1.m3(ao1, ao2, ao3, ao4, fd1, fd0, fd1, fd0, fb0, fb1, ab1, ab2);
+      fb0 = fo1.m2(ao1, ao2, ao3, ao4);
 }
-    ab3 = fd1 > fd0;
-if(fo1 != null){
-          fo0 = fo1.m4(fd1, fd0, fd1, fd0, ab4, fb0, fb1, ab1);
+    fd1 *= -1;
+if(fo0 != null){
+      fo0.m3(fo1, ao1, ao2, ao3, fd0, fd1, fd0, fd1, fb1, lb0, lb2, ab1);
 }
     ab2 = ab3 || ab4;
-if(ao2 != null){
-      ao1 = ao2.m4(ao3, ao4, fo0, fo1, fd1, fd0, fd1, fd0);
-}
-if(ao2 != null){
-      ao1 = ao2.m4();
-}
-if(ao3 != null){
-      fb0 = ao3.m2(ao4, fo0, fo1, ao1, fb1, ab1, ab2, ab3);
-}
-if(ao3 != null){
-      ao2 = ao3.m4(ab4, fb0, fb1, ab1);
-}
-    fd1 = fd0 + fd1;
-    for(int i0=0; i0<10; i0++){
-if(ao4 != null){
-          ab2 = ao4.m2(fd0, fd1, fd0, fd1);
-}
-        Thought lo0 = Thought7.getInstance(fo0, fo1, ao1, ao2);
-if(ao3 != null){
-          fd0 = ao3.m3(ao4, fo0, fo1, ao1, fd1, fd0, fd1, fd0, ab3, ab4, fb0, fb1);
-}
-if(ao3 != null){
-          ao2 = ao3.m4(fd1, fd0, fd1, fd0, ab1, ab2, ab3, ab4);
-}
-if(fo0 != null){
-          ao4 = fo0.m4(fo1, ao1, ao2, ao3, fd1, fd0, fd1, fd0);
-}
-if(ao4 != null){
-          ao4.m3();
-}
-        fd1 = fd0 - fd1;
-if(fo0 != null){
-          fo0.m1(fo1, ao1, ao2, ao3, fb0, fb1, ab1, ab2);
-}
-        ab3 = fd0 > fd1;
-}
+    fb0 = !fb1;
+    fd0 = fd1 + fd0;
+    Thought lo3 = Thought77.getInstance(ao4, fo0, fo1, ao1, lb0, lb2, ab1, ab2);
+    fd1 *= -1;
+
 Thought.STACK_COUNTER++;
-return ao4;
+return ao2;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
 } catch (CountDownExc e) {
 if(!e.surfaced()) {
@@ -1737,38 +1696,28 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    Output.points[8][5] -= ad1;
-    ab2 = ad2 < ad3;
-    Thought lo0 = Thought18.getInstance(ab3, ab4, fb0, fb1);
-    ab1 = ab2 || ab3;
-    ab4 = ad4 > fd0;
+if (false) { throw new CountDownExc(-1); }
+    Output.points[7][7] -= ad1;
 if(ao1 != null){
-      fb0 = ao1.m2(fd1, ad1, ad2, ad3);
+      ad2 = ao1.m3(ad3, ad4, fd0, fd1);
 }
-    ad4 *= -1;
-    fd0 = fd1 - ad1;
-    boolean lb1 = false;
-    ad2 *= -1;
-    fb0 = fb1 || lb1;
-    Output.points[8][6] -= ad3;
     ab1 = ab2 || ab3;
 if(ao2 != null){
-      ab4 = ao2.m2(ao3, ao4, fo0, fo1);
+      ab4 = ao2.m2(ao3, ao4, fo0, fo1, ad1, ad2, ad3, ad4);
 }
-    Thought lo2 = Thought12.getInstance(ao1, ao2, ao3, ao4, ad4, fd0, fd1, ad1, fb0, fb1, lb1, ab1);
-    double ld3 = 799.4291048264278;
-    ab2 = ab3 && ab4;
-    Output.points[8][7] -= ad1;
-    ad2 = ad3 + ad4;
-if(fo1 != null){
-      fo0 = fo1.m4(fd0, fd1, ld3, ad1, fb0, fb1, lb1, ab1);
+    fb0 = fb1 && ab1;
+if(ao1 != null){
+      fd0 = ao1.m3(ab2, ab3, ab4, fb0);
 }
-        boolean lb4 = true;
-    ad2 *= -1;
-    for(int i0=0; i0<10; i0++){
+    fb1 = fd1 < ad1;
+if(ao2 != null){
+      ao2.m1();
 }
+    ab1 = ad2 < ad3;
+    ab2 = ad4 > fd0;
+
 Thought.STACK_COUNTER++;
-return ao1;
+return ao3;
 } catch (StackOverflowExc | NoClassDefFoundError e) { throw new CountDownExc(50);
 } catch (CountDownExc e) {
 if(!e.surfaced()) {
@@ -1799,33 +1748,46 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    fb0 = fd1 > fd0;
-    fb1 = fd1 > fd0;
-    fb0 = !fb1;
+if (false) { throw new CountDownExc(-1); }
+    double ld0 = 512.6934280692053;
+    fd0 = fd1 + ld0;
+    fb0 = fb1 || fb0;
+    fb1 = !fb0;
 if(fo1 != null){
-      fd1 = fo1.m3(fo0, fo1, fo0, fo1, fd0, fd1, fd0, fd1);
+      fd0 = fo1.m3(fd1, ld0, fd0, fd1, fb1, fb0, fb1, fb0);
 }
-if(fo1 != null){
-      fo0 = fo1.m4();
-}
-    fd0 = fd1 + fd0;
-    fb0 = fd1 > fd0;
-    boolean lb0 = true;
-if(fo1 != null){
-      fo0 = fo1.m4(fo0, fo1, fo0, fo1, fb0, fb1, lb0, fb0);
-}
-    fd1 = fd0 - fd1;
-    fd0 *= -1;
-if(fo1 != null){
-      fo0 = fo1.m4(fb1, lb0, fb0, fb1);
-}
-    lb0 = !fb0;
-    Output.points[8][8] += fd1;
 if(fo0 != null){
-      fd0 = fo0.m3(fd1, fd0, fd1, fd0);
+      fo0.m1(fo1, fo0, fo1, fo0);
 }
-    double ld1 = 454.7002111256186;
+    boolean lb1 = false;
+    double ld2 = 62.50021668295983;
+    Output.points[7][8] -= ld0;
+    fb0 = ld2 < fd0;
+if(fo0 != null){
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0, fd1, ld0, ld2, fd0, fb1, lb1, fb0, fb1);
+}
+    boolean lb3 = false;
+    double ld4 = 826.6535834344314;
+    lb1 = lb3 && fb0;
+    fb1 = fd0 > fd1;
+    ld0 = ld2 + ld4;
+    boolean lb5 = true;
+if(fo0 != null){
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0, lb1, lb3, lb5, fb0);
+}
+        fb1 = !lb1;
     fd0 *= -1;
+    fd1 *= -1;
+if(fo0 != null){
+      fo1 = fo0.m4(ld0, ld2, ld4, fd0);
+}
+if(fo1 != null){
+      lb3 = fo1.m2(fo0, fo1, fo0, fo1, fd1, ld0, ld2, ld4);
+}
+if(fo1 != null){
+      fo0 = fo1.m4(lb5, fb0, fb1, lb1);
+}
+    lb3 = !lb5;
 
 Thought.STACK_COUNTER++;
 } catch (StackOverflowExc | NoClassDefFoundError e) { 
@@ -1843,44 +1805,69 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
+if (false) { throw new CountDownExc(-1); }
+    boolean lb0 = true;
 if(fo1 != null){
-      fd0 = fo1.m3(fo0, fo1, fo0, fo1);
+      fo0 = fo1.m4();
+}
+    fb0 = fb1 && lb0;
+if(fo1 != null){
+      fo0 = fo1.m4(fd1, fd0, fd1, fd0, fb0, fb1, lb0, fb0);
+}
+if(fo1 != null){
+      fo0 = fo1.m4(fo0, fo1, fo0, fo1);
+}
+if(fo1 != null){
+      fo0 = fo1.m4(fo0, fo1, fo0, fo1, fd1, fd0, fd1, fd0, fb1, lb0, fb0, fb1);
+}
+if(fo1 != null){
+      fo0 = fo1.m4(fo0, fo1, fo0, fo1, lb0, fb0, fb1, lb0);
+}
+if(fo0 != null){
+      fo0.m1(fd1, fd0, fd1, fd0);
+}
+if(fo0 != null){
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0, fd1, fd0, fd1, fd0);
+}
+    Output.points[8][0] += fd1;
+    fb0 = fd0 < fd1;
+    fd0 = fd1 + fd0;
+if(fo1 != null){
+          fo1.m1(fb1, lb0, fb0, fb1);
+}
+    boolean lb1 = false;
+    lb0 = fd1 < fd0;
+if(fo0 != null){
+      lb1 = fo0.m2();
+}
+if(fo1 != null){
+      fd1 = fo1.m3(fd0, fd1, fd0, fd1, fb0, fb1, lb0, lb1);
+}
+if(fo0 != null){
+      fo0.m3(fo1, fo0, fo1, fo0);
+}
+if(fo0 != null){
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0, fd0, fd1, fd0, fd1, fb0, fb1, lb0, lb1);
 }
     fb0 = !fb1;
 if(fo0 != null){
-      fb0 = fo0.m2(fo1, fo0, fo1, fo0, fd1, fd0, fd1, fd0, fb1, fb0, fb1, fb0);
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0, lb0, lb1, fb0, fb1);
 }
-    Thought lo0 = Thought3.getInstance(fd1, fd0, fd1, fd0, fb1, fb0, fb1, fb0);
-    fd1 = fd0 - fd1;
-if(fo1 != null){
-          fd0 = fo1.m3(fo0, fo1, fo0, fo1, fd1, fd0, fd1, fd0);
-}
-    fd1 *= -1;
-    Thought lo1 = Thought11.getInstance();
-if(fo1 != null){
-      fo0 = fo1.m4(fo0, fo1, fo0, fo1, fb1, fb0, fb1, fb0);
+    double ld2 = 237.3044803722462;
+    Output.points[8][1] -= ld2;
+if(fo0 != null){
+      fo1 = fo0.m4(fd0, fd1, ld2, fd0);
 }
 if(fo0 != null){
-      fo0.m3(fb1, fb0, fb1, fb0);
+      fo1 = fo0.m4(fo1, fo0, fo1, fo0, fd1, ld2, fd0, fd1);
 }
 if(fo0 != null){
-      fo1 = fo0.m4(fd0, fd1, fd0, fd1);
+      fo1 = fo0.m4(lb0, lb1, fb0, fb1);
 }
 if(fo1 != null){
-      fb1 = fo1.m2(fo0, fo1, fo0, fo1);
+      lb0 = fo1.m2();
 }
-if(fo1 != null){
-      fo0 = fo1.m4(fo0, fo1, fo0, fo1, fd0, fd1, fd0, fd1, fb0, fb1, fb0, fb1);
-}
-    fd0 = fd1 - fd0;
-        boolean lb2 = false;
-if(fo1 != null){
-      fo0 = fo1.m4(fd1, fd0, fd1, fd0, lb2, fb0, fb1, lb2);
-}
-    fb0 = fd1 < fd0;
-if(fo0 != null){
-      fb1 = fo0.m2(fo1, fo0, fo1, fo0, fd1, fd0, fd1, fd0);
-}
+    lb1 = ld2 < fd0;
 
 Thought.STACK_COUNTER++;
 } catch (StackOverflowExc | NoClassDefFoundError e) { 
@@ -1898,44 +1885,27 @@ if(Thought.STACK_COUNTER <=0){
 throw new StackOverflowExc();
 }
 try {
-    fd1 = fd0 - fd1;
+if (false) { throw new CountDownExc(-1); }
+        fb0 = fb1 || fb0;
+    fd0 = fd1 - fd0;
+    fd1 = fd0 + fd1;
+    fb1 = fb0 && fb1;
+    fd0 = fd1 + fd0;
+    double ld0 = 119.50487287329817;
+if(fo0 != null){
+      fo0.m3(fd0, fd1, ld0, fd0, fb0, fb1, fb0, fb1);
+}
+    Output.points[8][2] -= fd1;
+    Thought lo1 = Thought42.getInstance(fo1, fo0, fo1, fo0);
+    ld0 *= -1;
 if(fo1 != null){
-      fo1.m2();
+      fd0 = fo1.m3(fo0, fo1, fo0, fo1, fd1, ld0, fd0, fd1, fb0, fb1, fb0, fb1);
 }
-    double ld0 = 180.27587011556136;
+    ld0 = fd0 - fd1;
 if(fo0 != null){
-      fb0 = fo0.m2(fo1, fo0, fo1, fo0, fb1, fb0, fb1, fb0);
+      fo0.m3(fo1, fo0, fo1, fo0, fb0, fb1, fb0, fb1);
 }
-if(fo0 != null){
-      fo1 = fo0.m4(fb1, fb0, fb1, fb0);
-}
-    Thought lo1 = Thought3.getInstance(ld0, fd0, fd1, ld0);
-    Thought lo2 = Thought4.getInstance(fo1, fo0, fo1, fo0);
-    Thought lo3 = Thought13.getInstance(fo1, fo0, fo1, fo0, fd0, fd1, ld0, fd0, fb1, fb0, fb1, fb0);
-if(fo1 != null){
-      fb1 = fo1.m2(fd1, ld0, fd0, fd1, fb0, fb1, fb0, fb1);
-}
-if(fo1 != null){
-      fo0 = fo1.m4(fo0, fo1, fo0, fo1, ld0, fd0, fd1, ld0);
-}
-    fb0 = !fb1;
-    Thought lo4 = Thought19.getInstance();
-    Output.points[0][0] -= fd0;
-    fd1 = ld0 - fd0;
-if(fo0 != null){
-      fb0 = fo0.m2(fo1, fo0, fo1, fo0, fb1, fb0, fb1, fb0);
-}
-    boolean lb5 = true;
-    double ld6 = 816.8022617375161;
-    fd0 = fd1 - ld0;
-    Output.points[0][1] += ld6;
-if(fo0 != null){
-      fo1 = fo0.m4(fb0, fb1, lb5, fb0);
-}
-    boolean lb7 = true;
-if(fo0 != null){
-      fo1 = fo0.m4(fd0, fd1, ld0, ld6);
-}
+    Thought lo2 = Thought98.getInstance(ld0, fd0, fd1, ld0);
 
 Thought.STACK_COUNTER++;
 } catch (StackOverflowExc | NoClassDefFoundError e) { 

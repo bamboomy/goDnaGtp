@@ -9,7 +9,7 @@ import genetic.CountDownExc;
 
 public class DnaWriter {
 
-	private static final int NB_OF_THOUGHTS = 20, MIN_LINEZ = 10, MAX_LINEZ = 30;
+	private static final int NB_OF_THOUGHTS = 100, MIN_LINEZ = 10, MAX_LINEZ = 30;
 	static final int BOARDSIZE = 9;
 
 	private static final String EMPTY = "", BOOLEANS = "boolean ab1, boolean ab2, boolean ab3, boolean ab4";
@@ -97,31 +97,29 @@ public class DnaWriter {
 
 	private static void writeBooleanSequence(BufferedWriter writer) throws IOException {
 
-		writeSequence("b", writer);
+		writeSequence("b", writer, 30);
 	}
 
 	private static void writeDoubleSequence(BufferedWriter writer) throws IOException {
 
-		writeSequence("d", writer);
+		writeSequence("d", writer, 30);
 	}
 
 	private static void writeObjectSequence(BufferedWriter writer) throws IOException {
 
-		writeSequence("o", writer);
+		writeSequence("o", writer, 90);
 	}
 
 	private static void writeArgumentsSequence(BufferedWriter writer) throws IOException {
 
-		writeSequence("arg", writer);
+		writeSequence("arg", writer, 30);
 	}
 
-	private static void writeSequence(String string, BufferedWriter writer) throws IOException {
+	private static void writeSequence(String string, BufferedWriter writer, int max) throws IOException {
 
 		writer.write(string + ":");
 
 		ArrayList<Integer> ordered = new ArrayList<>();
-
-		int max = 30;
 
 		ArrayList<Integer> result = new ArrayList<>();
 

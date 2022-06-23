@@ -433,7 +433,14 @@ public class DnaPairer {
 
 		System.out.println(before);
 
-		if (variableSet.add(before.split(delimiter)[1])) {
+		if (!before.contains(delimiter)) {
+
+			return line;
+		}
+
+		String[] parts = before.split(delimiter);
+
+		if (parts.length < 2 || variableSet.add(parts[1])) {
 
 			return line;
 
