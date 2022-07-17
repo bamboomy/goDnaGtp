@@ -52,7 +52,7 @@ public class DnaMutator {
 
 		Set<Integer> mutatePoints = new HashSet<>();
 
-		while (mutatePoints.size() < 4) {
+		while (mutatePoints.size() < 40) {
 
 			mutatePoints.add((int) (Math.random() * cutpointCount));
 		}
@@ -132,7 +132,7 @@ public class DnaMutator {
 
 		List<StringBuilder> sbList = Arrays.asList(straight);
 
-		Collections.shuffle(sbList);
+		sbList = shuffle(sbList);
 
 		try {
 			File file = new File(mutatee); // creates a new file instance
@@ -155,7 +155,7 @@ public class DnaMutator {
 					while ((line = br.readLine()) != null
 							&& !line.contains("</cutPoint" + mutateArray[cutpointCounter])) {
 					}
-					
+
 					writer.write(line + "\n");
 
 					cutpointCounter++;
@@ -173,6 +173,37 @@ public class DnaMutator {
 		}
 
 		System.out.println("====");
+	}
+
+	private static List<StringBuilder> shuffle(List<StringBuilder> sbList) {
+
+		List<StringBuilder> result = new ArrayList<StringBuilder>();
+
+		int randomIndex = (int) (Math.random() * sbList.size());
+
+		List<Integer> choosenIndexes = new ArrayList<Integer>();
+
+		while (randomIndex == 0) {
+			randomIndex = (int) (Math.random() * sbList.size());
+		}
+
+		result.add(sbList.get(randomIndex));
+		choosenIndexes.add(randomIndex);
+
+		while (choosenIndexes.size() < sbList.size()) {
+
+			randomIndex = (int) (Math.random() * sbList.size());
+
+			while (choosenIndexes.contains(randomIndex)) {
+
+				randomIndex = (int) (Math.random() * sbList.size());
+			}
+			
+			result.add(sbList.get(randomIndex));
+			choosenIndexes.add(randomIndex);
+		}
+		
+		return result;
 	}
 
 }

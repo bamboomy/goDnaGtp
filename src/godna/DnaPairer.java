@@ -13,10 +13,8 @@ import java.util.Set;
 
 public class DnaPairer {
 
-	public DnaPairer() {
-		// TODO Auto-generated constructor stub
-	}
-
+	public static final int NB_OF_CROSS_OVERS = 40;
+	
 	public static void main(String[] args) {
 
 		String first, second, childOne, childTwo;
@@ -112,14 +110,14 @@ public class DnaPairer {
 
 	private static int[] createCutpointBase(int firstCutpoints) {
 
-		int[] cutpointsBase = new int[10];
+		int[] cutpointsBase = new int[NB_OF_CROSS_OVERS];
 
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < NB_OF_CROSS_OVERS; i++) {
 
 			cutpointsBase[i] = -1;
 		}
 
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < NB_OF_CROSS_OVERS; i++) {
 
 			boolean same = true;
 
@@ -145,7 +143,7 @@ public class DnaPairer {
 
 		System.out.println("---");
 
-		int[][] result = new int[10][2];
+		int[][] result = new int[NB_OF_CROSS_OVERS][2];
 
 		try {
 			File file = new File(filename); // creates a new file instance
@@ -188,7 +186,7 @@ public class DnaPairer {
 					counting = false;
 					cutpointMinorCounter = 0;
 
-					if (cutpointCounter == 10) {
+					if (cutpointCounter == NB_OF_CROSS_OVERS) {
 						break;
 					}
 				}
@@ -213,7 +211,7 @@ public class DnaPairer {
 
 		System.out.println("---");
 
-		int[][] result = new int[10][2];
+		int[][] result = new int[NB_OF_CROSS_OVERS][2];
 
 		try {
 			File file = new File(filename); // creates a new file instance
@@ -256,7 +254,7 @@ public class DnaPairer {
 					counting = false;
 					cutpointMinorCounter = 0;
 
-					if (cutpointCounter == 10) {
+					if (cutpointCounter == NB_OF_CROSS_OVERS) {
 						break;
 					}
 				}
@@ -316,7 +314,7 @@ public class DnaPairer {
 					otherBuffer.append(line + "\n");
 				}
 
-				if (cutpointCounter < 10 && line.contains("<cutPoint" + nextBorder[cutpointCounter][0])) {
+				if (cutpointCounter < NB_OF_CROSS_OVERS && line.contains("<cutPoint" + nextBorder[cutpointCounter][0])) {
 
 					System.out.println("nextBorder[cutpointCounter[0]" + nextBorder[cutpointCounter][0]);
 					System.out.println("nextBorder[cutpointCounter[1]" + nextBorder[cutpointCounter][1]);
@@ -370,7 +368,7 @@ public class DnaPairer {
 					cutpointCounter++;
 				}
 
-				if (cutpointCounter > 0 && cutpointCounter - 1 < 10
+				if (cutpointCounter > 0 && cutpointCounter - 1 < NB_OF_CROSS_OVERS
 						&& line.contains("</cutPoint" + nextBorder[cutpointCounter - 1][0])) {
 
 					cutting = false;

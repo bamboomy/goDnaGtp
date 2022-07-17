@@ -1,5 +1,8 @@
 package godna;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Test {
 
 	public Test() {
@@ -7,20 +10,54 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		String toParse = "Thought0 (Thought ao1, Thought ao2, Thought ao3, Thought ao4, double ad1, double ad2, double ad3, double ad4, boolean ab1, boolean ab2, boolean ab3, boolean ab4";
+		List<Integer> list = new ArrayList<>();
 
-		int currentIndex = toParse.indexOf("double");
+		list.add(5);
+		list.add(3);
+		list.add(8);
+		list.add(1);
+		list.add(9);
+		list.add(7);
+		list.add(2);
+		list.add(10);
 
-		do {
+		list = shuffle(list);
 
-			System.out.println(toParse.substring(currentIndex + "double".length() + 1,
-					toParse.indexOf(",", currentIndex + "double".length() + 1)));
+		for (Integer integer : list) {
+			System.out.print(integer + ", ");
+		}
+		System.out.println();
+	}
 
-			currentIndex = currentIndex + "double".length() + 1;
+	private static List<Integer> shuffle(List<Integer> sbList) {
 
-			currentIndex = toParse.indexOf("double", currentIndex);
+		List<Integer> result = new ArrayList<>();
 
-		} while (currentIndex != -1);
+		int randomIndex = (int) (Math.random() * sbList.size());
+
+		List<Integer> choosenIndexes = new ArrayList<Integer>();
+
+		while (randomIndex == 0) {
+			randomIndex = (int) (Math.random() * sbList.size());
+		}
+
+		result.add(sbList.get(randomIndex));
+		choosenIndexes.add(randomIndex);
+
+		while (choosenIndexes.size() < sbList.size()) {
+
+			randomIndex = (int) (Math.random() * sbList.size());
+
+			while (choosenIndexes.contains(randomIndex)) {
+
+				randomIndex = (int) (Math.random() * sbList.size());
+			}
+
+			result.add(sbList.get(randomIndex));
+			choosenIndexes.add(randomIndex);
+		}
+
+		return result;
 	}
 
 }

@@ -9,7 +9,7 @@ import genetic.CountDownExc;
 
 public class DnaWriter {
 
-	private static final int NB_OF_THOUGHTS = 100, MIN_LINEZ = 10, MAX_LINEZ = 30;
+	private static final int NB_OF_THOUGHTS = 400, MIN_LINEZ = 10, MAX_LINEZ = 30;
 	static final int BOARDSIZE = 9;
 
 	private static final String EMPTY = "", BOOLEANS = "boolean ab1, boolean ab2, boolean ab3, boolean ab4";
