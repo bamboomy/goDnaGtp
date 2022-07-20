@@ -11,10 +11,14 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.apache.log4j.Logger;
+
 public class DnaPairer {
 
 	public static final int NB_OF_CROSS_OVERS = 40;
-	
+
+	private final static Logger logger = Logger.getLogger(DnaPairer.class);
+
 	public static void main(String[] args) {
 
 		String first, second, childOne, childTwo;
@@ -30,6 +34,8 @@ public class DnaPairer {
 			childOne = args[2];
 			childTwo = args[3];
 		}
+
+		logger.debug("going to create: " + childOne + " and " + childTwo + " from " + first + " and " + second);
 
 		try {
 
@@ -69,6 +75,7 @@ public class DnaPairer {
 		}
 
 		System.out.println("cutpointz match :) -> " + firstCutpoints);
+		logger.debug("cutpointz match :) -> " + firstCutpoints);
 
 		int[] cutpointsBase = createCutpointBase(firstCutpoints);
 
@@ -142,6 +149,7 @@ public class DnaPairer {
 	private static int[][] createFullCutpoints(int[] cutpointsBase, String filename) {
 
 		System.out.println("---");
+		logger.debug("---");
 
 		int[][] result = new int[NB_OF_CROSS_OVERS][2];
 
@@ -174,10 +182,7 @@ public class DnaPairer {
 
 					int cutpointMinor = (int) (Math.random() * (cutpointMinorCounter - 10)) + 5;
 
-					/*
-					 * System.out.println( cutpointsBase[cutpointCounter] + ":" +
-					 * cutpointMinorCounter + ", " + cutpointMinor);
-					 */
+					logger.debug(cutpointsBase[cutpointCounter] + ":" + cutpointMinorCounter + ", " + cutpointMinor);
 
 					result[cutpointCounter][0] = cutpointsBase[cutpointCounter];
 					result[cutpointCounter][1] = cutpointMinor;
@@ -242,10 +247,7 @@ public class DnaPairer {
 
 					int cutpointMinor = (int) (Math.random() * (cutpointMinorCounter - 10)) + 5;
 
-					/*
-					 * System.out.println( cutpointsBase[cutpointCounter] + ":" +
-					 * cutpointMinorCounter + ", " + cutpointMinor);
-					 */
+					logger.debug(cutpointsBase[cutpointCounter] + ":" + cutpointMinorCounter + ", " + cutpointMinor);
 
 					result[cutpointCounter][0] = cutpointsBase[cutpointCounter];
 					result[cutpointCounter][1] = cutpointMinor;
@@ -314,10 +316,11 @@ public class DnaPairer {
 					otherBuffer.append(line + "\n");
 				}
 
-				if (cutpointCounter < NB_OF_CROSS_OVERS && line.contains("<cutPoint" + nextBorder[cutpointCounter][0])) {
+				if (cutpointCounter < NB_OF_CROSS_OVERS
+						&& line.contains("<cutPoint" + nextBorder[cutpointCounter][0])) {
 
 					System.out.println("nextBorder[cutpointCounter[0]" + nextBorder[cutpointCounter][0]);
-					System.out.println("nextBorder[cutpointCounter[1]" + nextBorder[cutpointCounter][1]);
+					logger.debug("nextBorder[cutpointCounter[1]" + nextBorder[cutpointCounter][1]);
 
 					cutting = true;
 
@@ -354,6 +357,7 @@ public class DnaPairer {
 					System.out.println();
 
 					System.out.println("-" + currentNextBorder[cutpointCounter][1]);
+					logger.debug("-" + currentNextBorder[cutpointCounter][1]);
 
 					for (int i = 0; i < currentNextBorder[cutpointCounter][1]; i++) {
 
@@ -400,6 +404,7 @@ public class DnaPairer {
 		Set<String> objectSet = new HashSet<>();
 
 		System.out.println("cleaning");
+		logger.debug("cleaning");
 
 		String[] lines = dirty.toString().split("\\n");
 		for (String line : lines) {
@@ -430,6 +435,7 @@ public class DnaPairer {
 		String before = line.split(" =")[0];
 
 		System.out.println(before);
+		logger.debug(before);
 
 		if (!before.contains(delimiter)) {
 
@@ -445,6 +451,7 @@ public class DnaPairer {
 		} else {
 
 			System.out.println("skipped: " + line);
+			logger.debug("skipped: " + line);
 
 			return "";
 		}

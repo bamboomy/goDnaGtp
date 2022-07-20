@@ -9,16 +9,17 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class DnaMutator {
+import org.apache.log4j.Logger;
 
-	public DnaMutator() {
-		// TODO Auto-generated constructor stub
-	}
+public class DnaMutator {
+	
+	private final static Logger logger = Logger.getLogger(DnaMutator.class);
+	
+	private static final int MUTATIONZ = 10;
 
 	public static void main(String[] args) {
 
@@ -52,12 +53,13 @@ public class DnaMutator {
 
 		Set<Integer> mutatePoints = new HashSet<>();
 
-		while (mutatePoints.size() < 40) {
+		while (mutatePoints.size() < MUTATIONZ) {
 
 			mutatePoints.add((int) (Math.random() * cutpointCount));
 		}
 
-		int[] mutateArray = mutatePoints.stream().mapToInt(Integer::intValue).peek(System.out::println).toArray();
+		int[] mutateArray = mutatePoints.stream().mapToInt(Integer::intValue).peek(System.out::println)
+				.peek(logger::debug).toArray();
 
 		Arrays.sort(mutateArray);
 
@@ -66,6 +68,8 @@ public class DnaMutator {
 		for (StringBuilder sb : straight) {
 
 			System.out.println(sb.toString());
+			logger.debug("\\/straight\\/");
+			logger.debug(sb.toString());
 			System.out.println("====");
 		}
 
@@ -76,7 +80,7 @@ public class DnaMutator {
 
 		System.out.println("---");
 
-		StringBuilder[] result = new StringBuilder[4];
+		StringBuilder[] result = new StringBuilder[MUTATIONZ];
 
 		try {
 			File file = new File(mutatee); // creates a new file instance
@@ -104,7 +108,7 @@ public class DnaMutator {
 
 					cutpointCounter++;
 
-					if (cutpointCounter >= 4) {
+					if (cutpointCounter >= MUTATIONZ) {
 						break;
 					}
 				}
@@ -129,6 +133,7 @@ public class DnaMutator {
 			BufferedWriter writer) {
 
 		System.out.println("---");
+		logger.debug("\\/copy & right\\/");
 
 		List<StringBuilder> sbList = Arrays.asList(straight);
 
@@ -148,9 +153,11 @@ public class DnaMutator {
 
 				writer.write(line + "\n");
 
-				if (cutpointCounter != 4 && line.contains("<cutPoint" + mutateArray[cutpointCounter])) {
+				if (cutpointCounter != MUTATIONZ && line.contains("<cutPoint" + mutateArray[cutpointCounter])) {
 
 					writer.write(sbList.get(cutpointCounter).toString());
+					logger.debug("\\/sb\\/");
+					logger.debug(sbList.get(cutpointCounter).toString());
 
 					while ((line = br.readLine()) != null
 							&& !line.contains("</cutPoint" + mutateArray[cutpointCounter])) {
